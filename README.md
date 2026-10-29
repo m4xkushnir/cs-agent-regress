@@ -46,7 +46,8 @@ satisfied, generate the '###STOP###' token"*. The simulator treats its own "yes"
 
 The upper bound is not a claim that the agent would have finished correctly; it shows that the
 2.0-point gap between Opus 4.5 and GPT-5.2 is smaller than this artifact. `runner/run.py
---sim-fix` rewrites the rule so the simulator waits for the agent to report completion.
+--sim-fix` rewrites the rule so the simulator waits for the agent to report completion. Reported upstream
+with these numbers: [tau2-bench#182](https://github.com/sierra-research/tau2-bench/issues/182#issuecomment-6497301669).
 
 ### 2. GPT-5.2 sends raw JSON to customers in 92% of conversations
 
