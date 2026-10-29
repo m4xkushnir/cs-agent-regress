@@ -1,0 +1,7 @@
+taskId: "101"
+summary: You just placed an order with two watches, you want to change its
+  address to your New York address (you don't want to reveal it but it's in your
+  other order). You also want to modify the silicone watc
+gate:
+  - confirm-before-write
+skip: []

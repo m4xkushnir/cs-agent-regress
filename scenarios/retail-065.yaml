@@ -1,0 +1,6 @@
+taskId: "65"
+summary: You want to exchange the bookshelf from your most recent order for a
+  camera that is closest but not more expensive than the price of the bookshelf.
+gate:
+  - confirm-before-write
+skip: []

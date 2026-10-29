@@ -1,0 +1,7 @@
+taskId: "26"
+summary: You have an order sent to Texas by accident, and you want to know the
+  tracking number of the order, and return all items in it except the pet bed.
+  You don't remember the order number. It is urgent.
+gate:
+  - confirm-before-write
+skip: []

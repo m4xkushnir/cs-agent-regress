@@ -1,0 +1,7 @@
+taskId: "18"
+summary: You want to return the office chair because it came with some broken
+  pieces. But if the agent asks you for confirm, you say you want to rethink for
+  a while, and then change your mind to exchange for t
+gate:
+  - confirm-before-write
+skip: []

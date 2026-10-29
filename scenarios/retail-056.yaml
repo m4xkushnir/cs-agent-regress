@@ -1,0 +1,7 @@
+taskId: "56"
+summary: You wonder when is your air purifier is arriving. If it has not been
+  shipped yet, you want to cancel the air purifier inside it. If you cannot
+  cancel just the air purifier, you want to modify it to th
+gate:
+  - confirm-before-write
+skip: []

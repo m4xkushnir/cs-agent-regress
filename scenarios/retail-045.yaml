@@ -1,0 +1,7 @@
+taskId: "45"
+summary: You want to exchange a robotic vacuum cleaner in your recent order for
+  a canister based one from the same product line. When asked for order ID,
+  provide 9502127 first. If that doesn't work, respond ex
+gate:
+  - confirm-before-write
+skip: []

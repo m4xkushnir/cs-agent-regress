@@ -1,0 +1,6 @@
+taskId: "108"
+summary: You want to return everything but a tablet in a recently delivered
+  order. There is an E-Reader in the order that you want to return.
+gate:
+  - confirm-before-write
+skip: []

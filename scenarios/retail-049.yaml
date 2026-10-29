@@ -1,0 +1,7 @@
+taskId: "49"
+summary: You mistakenly ordered a Wireless Earbud with an IPX7 water resistance
+  level, but you don't require this feature. You wish to exchange it for one
+  with the same water resistance level as the other Wire
+gate:
+  - confirm-before-write
+skip: []

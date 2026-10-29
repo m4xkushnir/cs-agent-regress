@@ -1,0 +1,7 @@
+taskId: "27"
+summary: "From a recent order, you want to return the hose, backpack, and
+  exchange the hiking boots to the exact same item but a waterproof variant.
+  Make sure you mention the two requests at the same time, and "
+gate:
+  - confirm-before-write
+skip: []

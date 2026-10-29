@@ -1,0 +1,7 @@
+taskId: "90"
+summary: You want to know if the digital camera you just bought is 10x zoom. If
+  not, modify the item to 10x zoom without changing the other options. If 10x
+  zoom is not available, cancel the order with the reas
+gate:
+  - confirm-before-write
+skip: []

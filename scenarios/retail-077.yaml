@@ -1,0 +1,6 @@
+taskId: "77"
+summary: You ordered a perfume and you just tried a little bit and you like it a
+  lot. You want to get the maximum size available for it.
+gate:
+  - confirm-before-write
+skip: []

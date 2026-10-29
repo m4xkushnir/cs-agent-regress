@@ -1,0 +1,25 @@
+{
+  "name": "cs-agent-regress",
+  "version": "0.1.0",
+  "description": "Deterministic regression checks for customer-service agent trajectories",
+  "license": "MIT",
+  "type": "module",
+  "bin": { "regress": "dist/cli.js" },
+  "engines": { "node": ">=20" },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "vitest run",
+    "typecheck": "tsc -p tsconfig.json --noEmit"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "1.3.0",
+    "commander": "15.0.0",
+    "yaml": "2.9.1",
+    "zod": "4.6.7"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "typescript": "7.0.2",
+    "vitest": "5.0.5"
+  }
+}

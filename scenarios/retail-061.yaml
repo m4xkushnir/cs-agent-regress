@@ -1,0 +1,7 @@
+taskId: "61"
+summary: You want to change your wireless earbuds in order W5061109 to a blue
+  colored one. Provide all details upfront and ask the agent to resolve as soon
+  as possible. You want the price to be the same or low
+gate:
+  - confirm-before-write
+skip: []

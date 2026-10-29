@@ -1,0 +1,7 @@
+taskId: "86"
+summary: "You want to exchange your Fleece Jacket to red color and half zipper.
+  You also want to want to change your default address to your Washington DC
+  address (which you do not want to reveal but is in one "
+gate:
+  - confirm-before-write
+skip: []

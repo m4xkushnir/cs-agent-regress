@@ -1,0 +1,7 @@
+taskId: "70"
+summary: You recently received a helmet but you are not happy with it and want
+  to exchange. The size is too small and you want medium, plus you want high
+  ventilation. If multiple colors are available, you pref
+gate:
+  - confirm-before-write
+skip: []

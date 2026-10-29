@@ -1,0 +1,7 @@
+taskId: "53"
+summary: The bicycle you received was damaged during delivery, and you want to
+  get a refund. You're quite frustrated because the bike was very expensive and
+  you'd like to receive the refund as soon as possible
+gate:
+  - confirm-before-write
+skip: []

@@ -1,0 +1,7 @@
+taskId: "38"
+summary: You just placed an order but you realize that your card has only $950
+  credit left, but the order total is more than $1100. You wonder if the agent
+  can help split the payment with another card. If not,
+gate:
+  - confirm-before-write
+skip: []

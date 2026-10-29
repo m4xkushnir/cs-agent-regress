@@ -1,0 +1,7 @@
+taskId: "55"
+summary: You recently faced a financial issue and want to cancel or return all
+  possible orders. First, cancel the orders that haven't arrived yet. Then,
+  return everything from the orders that have been deliver
+gate:
+  - confirm-before-write
+skip: []

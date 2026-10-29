@@ -1,0 +1,7 @@
+taskId: "32"
+summary: "You just lost your tablet you just received and are in a bad mood. You
+  want to know the tracking number of the order, and if the agent can help you
+  refund or reorder the tablet. (You know it's a long "
+gate:
+  - confirm-before-write
+skip: []

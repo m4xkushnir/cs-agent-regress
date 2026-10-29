@@ -1,0 +1,7 @@
+taskId: "74"
+summary: You recently bought a laptop, but you want to exchange it to i9 CPU. If
+  multiple storage options are available, you prefer 256GB SSD. If multiple
+  colors are available, you prefer silver. You also have
+gate:
+  - confirm-before-write
+skip: []

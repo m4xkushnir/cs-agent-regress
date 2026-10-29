@@ -1,0 +1,7 @@
+taskId: "12"
+summary: You just got into gaming and want to cancel or return everything not
+  associated with it. (Everything except a keyboard and a mouse, but do not
+  reveal it to the agent). PayPal is prefered for refund, b
+gate:
+  - confirm-before-write
+skip: []

@@ -1,0 +1,7 @@
+taskId: "33"
+summary: You had a work-from-home situation and ordered three home office items
+  along with some hiking items, so that you can go back to your parent's place
+  at Seattle to remote work and enjoy outdoor life. Bu
+gate:
+  - confirm-before-write
+skip: []

@@ -1,0 +1,7 @@
+taskId: "97"
+summary: You want to change your LA order to your NYC address (you prefer not to
+  reveal it but it is in your other order). You also want to exchange Bluetooth
+  Speaker to be the cheapest green type. Make sure y
+gate:
+  - confirm-before-write
+skip: []

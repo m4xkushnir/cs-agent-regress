@@ -1,0 +1,6 @@
+taskId: "68"
+summary: You want to check how much you paid for the order that you most
+  recently placed. You are not sure how long ago the order was placed.
+gate:
+  - confirm-before-write
+skip: []

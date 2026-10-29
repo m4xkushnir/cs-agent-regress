@@ -1,0 +1,7 @@
+taskId: "71"
+summary: You made some mistake and ordered an order sent to your son's address
+  in Washington DC, and you want to modify it to your default address in
+  Charlotte (you do not want to mention it, but it is in your
+gate:
+  - confirm-before-write
+skip: []
