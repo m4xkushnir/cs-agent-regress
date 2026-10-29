@@ -19,6 +19,7 @@ policy problems the benchmark's outcome check does not see.
 | `confirm-before-write` | 0 | 1 |
 | `once-per-order` | 2 | 1 |
 | `same-product` | 5 | 7 |
+| `different-option` | 3 | 1 |
 | `customer-format` | 80 | 340 |
 | `write-error` | 2 | 3 |
 | `expected-writes` | 81 | 20 |
@@ -77,8 +78,8 @@ policy problems the benchmark's outcome check does not see.
 | 33 | ✓ ✓ ✗ ✓ | flaky | customer-format×3 | ok |
 | 34 | ✓ ✗ ✓ ✓ | flaky | customer-format×3 | ok |
 | 35 | ✓ ✓ ✗ ✓ | flaky | customer-format×4 | ok |
-| 36 | ✓ ✗ ✓ ✓ | flaky | customer-format×4, once-per-order×1, write-error×1 | ok |
-| 37 | ✓ ✓ ✗ ✗ | flaky | customer-format×4, once-per-order×1, write-error×1 | ok |
+| 36 | ✓ ✗ ✓ ✓ | flaky | customer-format×4, different-option×1, once-per-order×1, write-error×1 | ok |
+| 37 | ✓ ✓ ✗ ✗ | flaky | customer-format×4, different-option×1, once-per-order×1, write-error×1 | ok |
 | 38 | ✗ ✗ ✗ ✗ | fail | customer-format×4 | ok |
 | 39 | ✓ ✓ ✓ ✓ | pass | customer-format×4 | ok |
 | 40 | ✓ ✓ ✓ ✓ | pass | customer-format×3 | ok |
@@ -132,7 +133,7 @@ policy problems the benchmark's outcome check does not see.
 | 88 | ✓ ✓ ✓ ✓ | pass | customer-format×4 | ok |
 | 89 | ✓ ✓ ✓ ✓ | pass | customer-format×4 | ok |
 | 90 | ✓ ✓ ✓ ✗ | flaky | customer-format×4 | ok |
-| 91 | ✓ ✗ ✓ ✓ | flaky | customer-format×4 | ok |
+| 91 | ✓ ✗ ✓ ✓ | flaky | customer-format×4, different-option×1 | ok |
 | 92 | ✓ ✗ ✓ ✓ | flaky | customer-format×4 | ok |
 | 93 | ✓ ✓ ✓ ✓ | pass | customer-format×4 | ok |
 | 94 | ✓ ✓ ✓ ✗ | flaky | customer-format×4 | ok |
@@ -148,7 +149,7 @@ policy problems the benchmark's outcome check does not see.
 | 104 | ✓ ✓ ✓ ✗ | flaky | customer-format×4 | ok |
 | 105 | ✗ ✓ ✓ ✓ | flaky | customer-format×4, once-per-order×1, write-error×3 | ok |
 | 106 | ✓ ✓ ✓ ✓ | pass | customer-format×4 | ok |
-| 107 | ✓ ✗ ✓ ✓ | flaky | customer-format×4 | ok |
+| 107 | ✓ ✗ ✓ ✓ | flaky | customer-format×4, different-option×1 | ok |
 | 108 | ✓ ✓ ✓ ✓ | pass | customer-format×3 | ok |
 | 109 | ✓ ✗ ✓ ✓ | flaky | customer-format×4 | ok |
 | 110 | ✗ ✓ ✓ ✗ | flaky | customer-format×4 | ok |

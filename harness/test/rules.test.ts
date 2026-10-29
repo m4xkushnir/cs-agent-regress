@@ -99,6 +99,12 @@ describe("rule checks", () => {
     expect(ids(traj(steps))).toContain("same-product");
   });
 
+  it("flags an exchange of an item for itself", () => {
+    const steps = goodExchange();
+    steps[steps.length - 2] = ["call", "exchange_delivered_order_items", { ...exchangeArgs, new_item_ids: ["111"] }, {}];
+    expect(ids(traj(steps))).toEqual(["different-option"]);
+  });
+
   it("flags an invalid cancellation reason", () => {
     const steps = [...auth,
       ["call", "get_order_details", { order_id: "#W100" }, { order_id: "#W100", user_id: "ana_1", status: "pending" }],

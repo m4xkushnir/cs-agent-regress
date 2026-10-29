@@ -20,6 +20,7 @@ policy problems the benchmark's outcome check does not see.
 | `once-per-order` | 1 | 4 |
 | `refund-destination` | 1 | 6 |
 | `same-product` | 1 | 11 |
+| `different-option` | 5 | 3 |
 | `write-error` | 3 | 11 |
 | `expected-writes` | 118 | 28 |
 
@@ -59,7 +60,7 @@ policy problems the benchmark's outcome check does not see.
 | 15 | ✓ ✗ ✓ ✓ | flaky | - | ok |
 | 16 | ✓ ✓ ✓ ✓ | pass | - | ok |
 | 17 | ✓ ✓ ✓ ✓ | pass | - | ok |
-| 18 | ✗ ✗ ✗ ✗ | fail | - | ok |
+| 18 | ✗ ✗ ✗ ✗ | fail | different-option×3 | ok |
 | 19 | ✗ ✗ ✓ ✗ | flaky | write-error×1 | ok |
 | 20 | ✓ ✓ ✓ ✓ | pass | - | ok |
 | 21 | ✓ ✓ ✓ ✗ | flaky | same-product×3 | ok |
@@ -68,7 +69,7 @@ policy problems the benchmark's outcome check does not see.
 | 24 | ✓ ✓ ✓ ✓ | pass | - | ok |
 | 25 | ✓ ✓ ✓ ✓ | pass | - | ok |
 | 26 | ✓ ✓ ✓ ✗ | flaky | - | ok |
-| 27 | ✓ ✓ ✓ ✗ | flaky | once-per-order×1, write-error×1 | ok |
+| 27 | ✓ ✓ ✓ ✗ | flaky | different-option×1, once-per-order×1, write-error×1 | ok |
 | 28 | ✗ ✓ ✓ ✓ | flaky | - | ok |
 | 29 | ✓ ✗ ✓ ✗ | flaky | same-product×1 | ok |
 | 30 | ✓ ✓ ✓ ✗ | flaky | - | ok |
@@ -77,8 +78,8 @@ policy problems the benchmark's outcome check does not see.
 | 33 | ✓ ✓ ✓ ✓ | pass | same-product×1, write-error×1 | ok |
 | 34 | ✓ ✓ ✓ ✓ | pass | - | ok |
 | 35 | ✓ ✗ ✓ ✓ | flaky | - | ok |
-| 36 | ✗ ✓ ✓ ✓ | flaky | once-per-order×1, write-error×1 | ok |
-| 37 | ✓ ✗ ✓ ✓ | flaky | once-per-order×3, same-product×1, write-error×3 | ok |
+| 36 | ✗ ✓ ✓ ✓ | flaky | different-option×1, once-per-order×1, write-error×1 | ok |
+| 37 | ✓ ✗ ✓ ✓ | flaky | different-option×2, once-per-order×3, same-product×1, write-error×3 | ok |
 | 38 | ✗ ✗ ✗ ✗ | fail | - | ok |
 | 39 | ✓ ✓ ✓ ✓ | pass | - | ok |
 | 40 | ✓ ✓ ✓ ✓ | pass | - | ok |
@@ -148,7 +149,7 @@ policy problems the benchmark's outcome check does not see.
 | 104 | ✓ ✓ ✗ ✓ | flaky | - | ok |
 | 105 | ✓ ✓ ✓ ✓ | pass | - | ok |
 | 106 | ✓ ✓ ✓ ✓ | pass | - | ok |
-| 107 | ✗ ✓ ✗ ✗ | flaky | - | ok |
+| 107 | ✗ ✓ ✗ ✗ | flaky | different-option×1 | ok |
 | 108 | ✓ ✓ ✗ ✓ | flaky | - | ok |
 | 109 | ✓ ✗ ✗ ✓ | flaky | - | ok |
 | 110 | ✓ ✓ ✗ ✓ | flaky | - | ok |

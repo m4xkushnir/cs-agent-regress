@@ -33,6 +33,10 @@
       "inFailed": 0,
       "inPassed": 1
     },
+    "different-option": {
+      "inFailed": 4,
+      "inPassed": 0
+    },
     "expected-writes": {
       "inFailed": 86,
       "inPassed": 27
@@ -298,7 +302,9 @@
       ]
     },
     {
-      "checkHits": {},
+      "checkHits": {
+        "different-option": 1
+      },
       "gateViolations": [],
       "status": "flaky",
       "taskId": "18",
@@ -1182,7 +1188,9 @@
       ]
     },
     {
-      "checkHits": {},
+      "checkHits": {
+        "different-option": 1
+      },
       "gateViolations": [],
       "status": "flaky",
       "taskId": "91",
@@ -1376,7 +1384,9 @@
       ]
     },
     {
-      "checkHits": {},
+      "checkHits": {
+        "different-option": 2
+      },
       "gateViolations": [],
       "status": "fail",
       "taskId": "107",
@@ -2484,7 +2494,14 @@
           "turnIdx": 21
         }
       ],
-      "findings": [],
+      "findings": [
+        {
+          "check": "different-option",
+          "message": "exchange_delivered_order_items swaps item 8069050545 for itself; policy requires a different option",
+          "severity": "major",
+          "turnIdx": 21
+        }
+      ],
       "id": "opus45/018/t3",
       "judge": null,
       "passed": false,
@@ -6307,7 +6324,14 @@
           "turnIdx": 23
         }
       ],
-      "findings": [],
+      "findings": [
+        {
+          "check": "different-option",
+          "message": "exchange_delivered_order_items swaps item 9494281769 for itself; policy requires a different option",
+          "severity": "major",
+          "turnIdx": 23
+        }
+      ],
       "id": "opus45/091/t1",
       "judge": null,
       "passed": false,
@@ -7232,7 +7256,14 @@
           "turnIdx": 18
         }
       ],
-      "findings": [],
+      "findings": [
+        {
+          "check": "different-option",
+          "message": "exchange_delivered_order_items swaps item 1615379700 for itself; policy requires a different option",
+          "severity": "major",
+          "turnIdx": 18
+        }
+      ],
       "id": "opus45/107/t0",
       "judge": null,
       "passed": false,
@@ -7292,7 +7323,14 @@
           "turnIdx": 18
         }
       ],
-      "findings": [],
+      "findings": [
+        {
+          "check": "different-option",
+          "message": "exchange_delivered_order_items swaps item 1615379700 for itself; policy requires a different option",
+          "severity": "major",
+          "turnIdx": 18
+        }
+      ],
       "id": "opus45/107/t3",
       "judge": null,
       "passed": false,

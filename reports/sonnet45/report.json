@@ -33,6 +33,10 @@
       "inFailed": 0,
       "inPassed": 0
     },
+    "different-option": {
+      "inFailed": 5,
+      "inPassed": 3
+    },
     "expected-writes": {
       "inFailed": 118,
       "inPassed": 28
@@ -302,7 +306,9 @@
       ]
     },
     {
-      "checkHits": {},
+      "checkHits": {
+        "different-option": 3
+      },
       "gateViolations": [],
       "status": "fail",
       "taskId": "18",
@@ -415,6 +421,7 @@
     },
     {
       "checkHits": {
+        "different-option": 1,
         "once-per-order": 1,
         "write-error": 1
       },
@@ -531,6 +538,7 @@
     },
     {
       "checkHits": {
+        "different-option": 1,
         "once-per-order": 1,
         "write-error": 1
       },
@@ -546,6 +554,7 @@
     },
     {
       "checkHits": {
+        "different-option": 2,
         "once-per-order": 3,
         "same-product": 1,
         "write-error": 3
@@ -1410,7 +1419,9 @@
       ]
     },
     {
-      "checkHits": {},
+      "checkHits": {
+        "different-option": 1
+      },
       "gateViolations": [],
       "status": "flaky",
       "taskId": "107",
@@ -2550,7 +2561,14 @@
           "turnIdx": 19
         }
       ],
-      "findings": [],
+      "findings": [
+        {
+          "check": "different-option",
+          "message": "exchange_delivered_order_items swaps item 8069050545 for itself; policy requires a different option",
+          "severity": "major",
+          "turnIdx": 19
+        }
+      ],
       "id": "sonnet45/018/t0",
       "judge": null,
       "passed": false,
@@ -2586,7 +2604,14 @@
           "turnIdx": 16
         }
       ],
-      "findings": [],
+      "findings": [
+        {
+          "check": "different-option",
+          "message": "exchange_delivered_order_items swaps item 8069050545 for itself; policy requires a different option",
+          "severity": "major",
+          "turnIdx": 16
+        }
+      ],
       "id": "sonnet45/018/t2",
       "judge": null,
       "passed": false,
@@ -2604,7 +2629,14 @@
           "turnIdx": 15
         }
       ],
-      "findings": [],
+      "findings": [
+        {
+          "check": "different-option",
+          "message": "exchange_delivered_order_items swaps item 8069050545 for itself; policy requires a different option",
+          "severity": "major",
+          "turnIdx": 15
+        }
+      ],
       "id": "sonnet45/018/t3",
       "judge": null,
       "passed": false,
@@ -3060,6 +3092,18 @@
           "message": "exchange_delivered_order_items called 2 times on #W7181492; items must be collected into one call",
           "severity": "major",
           "turnIdx": 18
+        },
+        {
+          "check": "different-option",
+          "message": "exchange_delivered_order_items swaps item 5753502325 for itself; policy requires a different option",
+          "severity": "major",
+          "turnIdx": 16
+        },
+        {
+          "check": "different-option",
+          "message": "exchange_delivered_order_items swaps item 9851293632 for itself; policy requires a different option",
+          "severity": "major",
+          "turnIdx": 16
         },
         {
           "check": "write-error",
@@ -3664,6 +3708,18 @@
           "turnIdx": 34
         },
         {
+          "check": "different-option",
+          "message": "modify_pending_order_items swaps item 9879255677 for itself; policy requires a different option",
+          "severity": "major",
+          "turnIdx": 32
+        },
+        {
+          "check": "different-option",
+          "message": "modify_pending_order_items swaps item 9851293632 for itself; policy requires a different option",
+          "severity": "major",
+          "turnIdx": 32
+        },
+        {
           "check": "write-error",
           "message": "modify_pending_order_items failed: Error: The new item id should be different from the old item id",
           "severity": "minor",
@@ -3747,6 +3803,18 @@
           "turnIdx": 30
         },
         {
+          "check": "different-option",
+          "message": "modify_pending_order_items swaps item 9879255677 for itself; policy requires a different option",
+          "severity": "major",
+          "turnIdx": 28
+        },
+        {
+          "check": "different-option",
+          "message": "modify_pending_order_items swaps item 9851293632 for itself; policy requires a different option",
+          "severity": "major",
+          "turnIdx": 28
+        },
+        {
           "check": "write-error",
           "message": "modify_pending_order_items failed: Error: The new item id should be different from the old item id",
           "severity": "minor",
@@ -3780,6 +3848,18 @@
           "message": "modify_pending_order_items called 2 times on #W9348897; items must be collected into one call",
           "severity": "major",
           "turnIdx": 28
+        },
+        {
+          "check": "different-option",
+          "message": "modify_pending_order_items swaps item 9879255677 for itself; policy requires a different option",
+          "severity": "major",
+          "turnIdx": 26
+        },
+        {
+          "check": "different-option",
+          "message": "modify_pending_order_items swaps item 9851293632 for itself; policy requires a different option",
+          "severity": "major",
+          "turnIdx": 26
         },
         {
           "check": "write-error",
@@ -8039,7 +8119,14 @@
           "turnIdx": 20
         }
       ],
-      "findings": [],
+      "findings": [
+        {
+          "check": "different-option",
+          "message": "exchange_delivered_order_items swaps item 1615379700 for itself; policy requires a different option",
+          "severity": "major",
+          "turnIdx": 20
+        }
+      ],
       "id": "sonnet45/107/t3",
       "judge": null,
       "passed": false,

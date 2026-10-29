@@ -26,6 +26,7 @@ Trajectories with at least one rule finding (all outcomes):
 | `confirm-before-write` | 0 | 1 | 1 |
 | `customer-format` | 0 | 0 | 420 |
 | `details-before-confirm` | 0 | 1 | 0 |
+| `different-option` | 8 | 4 | 4 |
 | `once-per-order` | 5 | 0 | 3 |
 | `refund-destination` | 7 | 0 | 0 |
 | `same-product` | 12 | 7 | 12 |

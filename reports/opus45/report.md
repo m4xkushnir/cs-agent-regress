@@ -20,6 +20,7 @@ policy problems the benchmark's outcome check does not see.
 | `confirm-before-write` | 0 | 1 |
 | `details-before-confirm` | 0 | 1 |
 | `same-product` | 2 | 5 |
+| `different-option` | 4 | 0 |
 | `write-error` | 1 | 1 |
 | `expected-writes` | 86 | 27 |
 
@@ -59,7 +60,7 @@ policy problems the benchmark's outcome check does not see.
 | 15 | ✓ ✓ ✓ ✓ | pass | - | ok |
 | 16 | ✗ ✓ ✓ ✓ | flaky | - | ok |
 | 17 | ✓ ✓ ✓ ✓ | pass | details-before-confirm×1 | ok |
-| 18 | ✓ ✓ ✓ ✗ | flaky | - | ok |
+| 18 | ✓ ✓ ✓ ✗ | flaky | different-option×1 | ok |
 | 19 | ✓ ✓ ✓ ✓ | pass | - | ok |
 | 20 | ✓ ✓ ✓ ✓ | pass | - | ok |
 | 21 | ✓ ✓ ✓ ✓ | pass | same-product×4 | ok |
@@ -132,7 +133,7 @@ policy problems the benchmark's outcome check does not see.
 | 88 | ✓ ✓ ✓ ✓ | pass | - | ok |
 | 89 | ✓ ✓ ✓ ✓ | pass | auth-first×4 | ok |
 | 90 | ✓ ✓ ✓ ✓ | pass | - | ok |
-| 91 | ✓ ✗ ✗ ✓ | flaky | - | ok |
+| 91 | ✓ ✗ ✗ ✓ | flaky | different-option×1 | ok |
 | 92 | ✓ ✗ ✓ ✗ | flaky | - | ok |
 | 93 | ✓ ✓ ✓ ✓ | pass | - | ok |
 | 94 | ✓ ✓ ✗ ✓ | flaky | - | ok |
@@ -148,7 +149,7 @@ policy problems the benchmark's outcome check does not see.
 | 104 | ✗ ✓ ✓ ✗ | flaky | - | ok |
 | 105 | ✗ ✓ ✗ ✓ | flaky | write-error×2 | ok |
 | 106 | ✓ ✓ ✓ ✓ | pass | - | ok |
-| 107 | ✗ ✗ ✗ ✗ | fail | - | ok |
+| 107 | ✗ ✗ ✗ ✗ | fail | different-option×2 | ok |
 | 108 | ✓ ✓ ✓ ✓ | pass | - | ok |
 | 109 | ✗ ✓ ✓ ✗ | flaky | - | ok |
 | 110 | ✗ ✓ ✓ ✓ | flaky | - | ok |

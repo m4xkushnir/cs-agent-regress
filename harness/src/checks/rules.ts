@@ -221,6 +221,25 @@ export const checks: Check[] = [
     },
   },
   {
+    id: "different-option",
+    description: "An exchanged or modified item becomes a different option, never the identical item.",
+    run(ctx) {
+      const out: Finding[] = [];
+      for (const w of ctx.writes()) {
+        if (!ONCE_PER_ORDER.has(w.call.name)) continue;
+        const oldIds = ((w.call.args.item_ids as unknown[] | undefined) ?? []).map(String);
+        const newIds = ((w.call.args.new_item_ids as unknown[] | undefined) ?? []).map(String);
+        oldIds.forEach((oldId, i) => {
+          if (newIds[i] === oldId) {
+            out.push(f("different-option", "major", w.turnIdx,
+              `${w.call.name} swaps item ${oldId} for itself; policy requires a different option`));
+          }
+        });
+      }
+      return out;
+    },
+  },
+  {
     id: "cancel-reason",
     description: "Cancellation reason is one of the two the policy allows.",
     run(ctx) {
