@@ -1,0 +1,12 @@
+[project]
+name = "cs-agent-regress-runner"
+version = "0.1.0"
+description = "Runs the tau-bench retail domain with a cached, budget-capped LLM layer"
+requires-python = ">=3.12,<3.13"
+dependencies = ["tau2", "python-dotenv"]
+
+[tool.uv]
+package = false
+
+[tool.uv.sources]
+tau2 = { path = "../vendor/tau2-bench", editable = true }
