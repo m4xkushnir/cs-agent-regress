@@ -1,0 +1,44 @@
+name: agent-regression
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+jobs:
+  harness:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+          cache-dependency-path: harness/package-lock.json
+      - name: Install, typecheck, test, build
+        working-directory: harness
+        run: |
+          npm ci
+          npm run typecheck
+          npm test
+          npm run build
+      # Rule checks need no API key: they run on the committed, normalized trajectories.
+      - name: Check every committed run
+        run: |
+          for run in $(ls data/runs); do
+            node harness/dist/cli.js check data/runs/$run/run.json.gz \
+              --scenarios scenarios --ledger data/ledger.jsonl --out-dir reports/$run
+          done
+          node harness/dist/cli.js summary reports/sonnet45/report.json reports/opus45/report.json \
+            reports/gpt52/report.json --out reports/summary.md
+      - name: Reports match the committed copies (determinism)
+        run: git diff --exit-code -- reports
+      # The gate must fail when a gated check fires. gpt-5.2 sends JSON to customers,
+      # so gating customer-format against it has to exit 1; anything else is a harness bug.
+      - name: Gate self-test
+        run: |
+          set +e
+          node harness/dist/cli.js compare reports/opus45/report.json reports/gpt52/report.json \
+            --gate customer-format --out-dir /tmp/gate-selftest
+          code=$?
+          test "$code" -eq 1 || { echo "expected exit 1 from a failing gate, got $code"; exit 1; }

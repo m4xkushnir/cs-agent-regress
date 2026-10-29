@@ -1,0 +1,7762 @@
+{
+  "agentModel": "claude-opus-4-5",
+  "buckets": {
+    "communication-only": 7,
+    "ended-in-transfer": 14,
+    "missing-write": 9,
+    "sim-stop-on-confirm": 33,
+    "unwarranted-write": 9,
+    "wrong-cancel-reason": 5,
+    "wrong-other-argument": 1,
+    "wrong-payment-method": 3,
+    "wrong-variant": 12
+  },
+  "costUsd": 0,
+  "findingsByCheck": {
+    "auth-first": {
+      "inFailed": 1,
+      "inPassed": 10
+    },
+    "cancel-reason": {
+      "inFailed": 0,
+      "inPassed": 0
+    },
+    "confirm-before-write": {
+      "inFailed": 0,
+      "inPassed": 1
+    },
+    "customer-format": {
+      "inFailed": 0,
+      "inPassed": 0
+    },
+    "details-before-confirm": {
+      "inFailed": 0,
+      "inPassed": 1
+    },
+    "expected-writes": {
+      "inFailed": 86,
+      "inPassed": 27
+    },
+    "grounded-ids": {
+      "inFailed": 0,
+      "inPassed": 0
+    },
+    "once-per-order": {
+      "inFailed": 0,
+      "inPassed": 0
+    },
+    "refund-destination": {
+      "inFailed": 0,
+      "inPassed": 0
+    },
+    "same-product": {
+      "inFailed": 2,
+      "inPassed": 5
+    },
+    "same-user": {
+      "inFailed": 0,
+      "inPassed": 0
+    },
+    "status-before-write": {
+      "inFailed": 0,
+      "inPassed": 0
+    },
+    "transfer-protocol": {
+      "inFailed": 0,
+      "inPassed": 0
+    },
+    "write-error": {
+      "inFailed": 1,
+      "inPassed": 1
+    }
+  },
+  "passAllTrials": 0.5175,
+  "passRate": 0.7961,
+  "prompt": "tau2-default",
+  "runId": "opus45",
+  "taskResults": [
+    {
+      "checkHits": {},
+      "gateViolations": [],
+      "status": "pass",
+      "taskId": "0",
+      "trials": [
+        true,
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "checkHits": {},
+      "gateViolations": [],
+      "status": "flaky",
+      "taskId": "1",
+      "trials": [
+        true,
+        true,
+        true,
+        false
+      ]
+    },
+    {
+      "checkHits": {},
+      "gateViolations": [],
+      "status": "flaky",
+      "taskId": "2",
+      "trials": [
+        true,
+        true,
+        true,
+        false
+      ]
+    },
+    {
+      "checkHits": {
+        "auth-first": 3
+      },
+      "gateViolations": [],
+      "status": "pass",
+      "taskId": "3",
+      "trials": [
+        true,
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "checkHits": {
+        "auth-first": 4
+      },
+      "gateViolations": [],
+      "status": "flaky",
+      "taskId": "4",
+      "trials": [
+        true,
+        true,
+        false,
+        true
+      ]
+    },
+    {
+      "checkHits": {},
+      "gateViolations": [],
+      "status": "flaky",
+      "taskId": "5",
+      "trials": [
+        false,
+        false,
+        true,
+        false
+      ]
+    },
+    {
+      "checkHits": {},
+      "gateViolations": [],
+      "status": "flaky",
+      "taskId": "6",
+      "trials": [
+        true,
+        true,
+        false,
+        true
+      ]
+    },
+    {
+      "checkHits": {},
+      "gateViolations": [],
+      "status": "flaky",
+      "taskId": "7",
+      "trials": [
+        true,
+        false,
+        true,
+        true
+      ]
+    },
+    {
+      "checkHits": {},
+      "gateViolations": [],
+      "status": "flaky",
+      "taskId": "8",
+      "trials": [
+        false,
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "checkHits": {},
+      "gateViolations": [],
+      "status": "pass",
+      "taskId": "9",
+      "trials": [
+        true,
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "checkHits": {},
+      "gateViolations": [],
+      "status": "flaky",
+      "taskId": "10",
+      "trials": [
+        false,
+        true,
+        true,
+        false
+      ]
+    },
+    {
+      "checkHits": {},
+      "gateViolations": [],
+      "status": "pass",
+      "taskId": "11",
+      "trials": [
+        true,
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "checkHits": {},
+      "gateViolations": [],
+      "status": "flaky",
+      "taskId": "12",
+      "trials": [
+        false,
+        true,
+        false,
+        true
+      ]
+    },
+    {
+      "checkHits": {},
+      "gateViolations": [],
+      "status": "pass",
+      "taskId": "13",
+      "trials": [
+        true,
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "checkHits": {},
+      "gateViolations": [],
+      "status": "pass",
+      "taskId": "14",
+      "trials": [
+        true,
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "checkHits": {},
+      "gateViolations": [],
+      "status": "pass",
+      "taskId": "15",
+      "trials": [
+        true,
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "checkHits": {},
+      "gateViolations": [],
+      "status": "flaky",
+      "taskId": "16",
+      "trials": [
+        false,
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "checkHits": {
+        "details-before-confirm": 1
+      },
+      "gateViolations": [],
+      "status": "pass",
+      "taskId": "17",
+      "trials": [
+        true,
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "checkHits": {},
+      "gateViolations": [],
+      "status": "flaky",
+      "taskId": "18",
+      "trials": [
+        true,
+        true,
+        true,
+        false
+      ]
+    },
+    {
+      "checkHits": {},
+      "gateViolations": [],
+      "status": "pass",
+      "taskId": "19",
+      "trials": [
+        true,
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "checkHits": {},
+      "gateViolations": [],
+      "status": "pass",
+      "taskId": "20",
+      "trials": [
+        true,
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "checkHits": {
+        "same-product": 4
+      },
+      "gateViolations": [],
+      "status": "pass",
+      "taskId": "21",
+      "trials": [
+        true,
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "checkHits": {},
+      "gateViolations": [],
+      "status": "flaky",
+      "taskId": "22",
+      "trials": [
+        true,
+        false,
+        true,
+        true
+      ]
+    },
+    {
+      "checkHits": {},
+      "gateViolations": [],
+      "status": "pass",
+      "taskId": "23",
+      "trials": [
+        true,
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "checkHits": {},
+      "gateViolations": [],
+      "status": "pass",
+      "taskId": "24",
+      "trials": [
+        true,
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "checkHits": {},
+      "gateViolations": [],
+      "status": "pass",
+      "taskId": "25",
+      "trials": [
+        true,
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "checkHits": {},
+      "gateViolations": [],
+      "status": "flaky",
+      "taskId": "26",
+      "trials": [
+        true,
+        false,
+        true,
+        true
+      ]
+    },
+    {
+      "checkHits": {},
+      "gateViolations": [],
+      "status": "pass",
+      "taskId": "27",
+      "trials": [
+        true,
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "checkHits": {},
+      "gateViolations": [],
+      "status": "pass",
+      "taskId": "28",
+      "trials": [
+        true,
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "checkHits": {
+        "same-product": 1
+      },
+      "gateViolations": [],
+      "status": "flaky",
+      "taskId": "29",
+      "trials": [
+        true,
+        true,
+        false,
+        true
+      ]
+    },
+    {
+      "checkHits": {
+        "confirm-before-write": 1
+      },
+      "gateViolations": [],
+      "status": "flaky",
+      "taskId": "30",
+      "trials": [
+        true,
+        true,
+        true,
+        false
+      ]
+    },
+    {
+      "checkHits": {},
+      "gateViolations": [],
+      "status": "pass",
+      "taskId": "31",
+      "trials": [
+        true,
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "checkHits": {},
+      "gateViolations": [],
+      "status": "flaky",
+      "taskId": "32",
+      "trials": [
+        false,
+        true,
+        false,
+        false
+      ]
+    },
+    {
+      "checkHits": {},
+      "gateViolations": [],
+      "status": "flaky",
+      "taskId": "33",
+      "trials": [
+        true,
+        true,
+        true,
+        false
+      ]
+    },
+    {
+      "checkHits": {},
+      "gateViolations": [],
+      "status": "flaky",
+      "taskId": "34",
+      "trials": [
+        true,
+        false,
+        true,
+        true
+      ]
+    },
+    {
+      "checkHits": {},
+      "gateViolations": [],
+      "status": "pass",
+      "taskId": "35",
+      "trials": [
+        true,
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "checkHits": {},
+      "gateViolations": [],
+      "status": "pass",
+      "taskId": "36",
+      "trials": [
+        true,
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "checkHits": {},
+      "gateViolations": [],
+      "status": "pass",
+      "taskId": "37",
+      "trials": [
+        true,
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "checkHits": {},
+      "gateViolations": [],
+      "status": "flaky",
+      "taskId": "38",
+      "trials": [
+        false,
+        false,
+        false,
+        true
+      ]
+    },
+    {
+      "checkHits": {},
+      "gateViolations": [],
+      "status": "flaky",
+      "taskId": "39",
+      "trials": [
+        true,
+        true,
+        true,
+        false
+      ]
+    },
+    {
+      "checkHits": {},
+      "gateViolations": [],
+      "status": "pass",
+      "taskId": "40",
+      "trials": [
+        true,
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "checkHits": {},
+      "gateViolations": [],
+      "status": "fail",
+      "taskId": "41",
+      "trials": [
+        false,
+        false,
+        false,
+        false
+      ]
+    },
+    {
+      "checkHits": {},
+      "gateViolations": [],
+      "status": "pass",
+      "taskId": "42",
+      "trials": [
+        true,
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "checkHits": {},
+      "gateViolations": [],
+      "status": "pass",
+      "taskId": "43",
+      "trials": [
+        true,
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "checkHits": {},
+      "gateViolations": [],
+      "status": "pass",
+      "taskId": "44",
+      "trials": [
+        true,
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "checkHits": {},
+      "gateViolations": [],
+      "status": "flaky",
+      "taskId": "45",
+      "trials": [
+        true,
+        false,
+        true,
+        true
+      ]
+    },
+    {
+      "checkHits": {},
+      "gateViolations": [],
+      "status": "pass",
+      "taskId": "46",
+      "trials": [
+        true,
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "checkHits": {},
+      "gateViolations": [],
+      "status": "pass",
+      "taskId": "47",
+      "trials": [
+        true,
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "checkHits": {},
+      "gateViolations": [],
+      "status": "flaky",
+      "taskId": "48",
+      "trials": [
+        false,
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "checkHits": {},
+      "gateViolations": [],
+      "status": "flaky",
+      "taskId": "49",
+      "trials": [
+        false,
+        false,
+        true,
+        false
+      ]
+    },
+    {
+      "checkHits": {},
+      "gateViolations": [],
+      "status": "pass",
+      "taskId": "50",
+      "trials": [
+        true,
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "checkHits": {},
+      "gateViolations": [],
+      "status": "pass",
+      "taskId": "51",
+      "trials": [
+        true,
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "checkHits": {},
+      "gateViolations": [],
+      "status": "flaky",
+      "taskId": "52",
+      "trials": [
+        true,
+        true,
+        true,
+        false
+      ]
+    },
+    {
+      "checkHits": {},
+      "gateViolations": [],
+      "status": "pass",
+      "taskId": "53",
+      "trials": [
+        true,
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "checkHits": {},
+      "gateViolations": [],
+      "status": "pass",
+      "taskId": "54",
+      "trials": [
+        true,
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "checkHits": {},
+      "gateViolations": [],
+      "status": "pass",
+      "taskId": "55",
+      "trials": [
+        true,
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "checkHits": {},
+      "gateViolations": [],
+      "status": "flaky",
+      "taskId": "56",
+      "trials": [
+        true,
+        true,
+        false,
+        true
+      ]
+    },
+    {
+      "checkHits": {},
+      "gateViolations": [],
+      "status": "pass",
+      "taskId": "57",
+      "trials": [
+        true,
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "checkHits": {},
+      "gateViolations": [],
+      "status": "pass",
+      "taskId": "58",
+      "trials": [
+        true,
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "checkHits": {},
+      "gateViolations": [],
+      "status": "flaky",
+      "taskId": "59",
+      "trials": [
+        true,
+        true,
+        true,
+        false
+      ]
+    },
+    {
+      "checkHits": {},
+      "gateViolations": [],
+      "status": "flaky",
+      "taskId": "60",
+      "trials": [
+        true,
+        true,
+        false,
+        true
+      ]
+    },
+    {
+      "checkHits": {},
+      "gateViolations": [],
+      "status": "pass",
+      "taskId": "61",
+      "trials": [
+        true,
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "checkHits": {},
+      "gateViolations": [],
+      "status": "pass",
+      "taskId": "62",
+      "trials": [
+        true,
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "checkHits": {},
+      "gateViolations": [],
+      "status": "pass",
+      "taskId": "63",
+      "trials": [
+        true,
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "checkHits": {},
+      "gateViolations": [],
+      "status": "flaky",
+      "taskId": "64",
+      "trials": [
+        true,
+        false,
+        true,
+        true
+      ]
+    },
+    {
+      "checkHits": {},
+      "gateViolations": [],
+      "status": "pass",
+      "taskId": "65",
+      "trials": [
+        true,
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "checkHits": {},
+      "gateViolations": [],
+      "status": "flaky",
+      "taskId": "66",
+      "trials": [
+        false,
+        true,
+        false,
+        false
+      ]
+    },
+    {
+      "checkHits": {},
+      "gateViolations": [],
+      "status": "flaky",
+      "taskId": "67",
+      "trials": [
+        true,
+        true,
+        true,
+        false
+      ]
+    },
+    {
+      "checkHits": {},
+      "gateViolations": [],
+      "status": "flaky",
+      "taskId": "68",
+      "trials": [
+        false,
+        true,
+        false,
+        false
+      ]
+    },
+    {
+      "checkHits": {},
+      "gateViolations": [],
+      "status": "pass",
+      "taskId": "69",
+      "trials": [
+        true,
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "checkHits": {},
+      "gateViolations": [],
+      "status": "pass",
+      "taskId": "70",
+      "trials": [
+        true,
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "checkHits": {},
+      "gateViolations": [],
+      "status": "flaky",
+      "taskId": "71",
+      "trials": [
+        true,
+        true,
+        true,
+        false
+      ]
+    },
+    {
+      "checkHits": {},
+      "gateViolations": [],
+      "status": "flaky",
+      "taskId": "72",
+      "trials": [
+        false,
+        false,
+        true,
+        true
+      ]
+    },
+    {
+      "checkHits": {},
+      "gateViolations": [],
+      "status": "pass",
+      "taskId": "73",
+      "trials": [
+        true,
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "checkHits": {},
+      "gateViolations": [],
+      "status": "flaky",
+      "taskId": "74",
+      "trials": [
+        true,
+        false,
+        true,
+        true
+      ]
+    },
+    {
+      "checkHits": {},
+      "gateViolations": [],
+      "status": "pass",
+      "taskId": "75",
+      "trials": [
+        true,
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "checkHits": {},
+      "gateViolations": [],
+      "status": "pass",
+      "taskId": "76",
+      "trials": [
+        true,
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "checkHits": {},
+      "gateViolations": [],
+      "status": "pass",
+      "taskId": "77",
+      "trials": [
+        true,
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "checkHits": {},
+      "gateViolations": [],
+      "status": "pass",
+      "taskId": "78",
+      "trials": [
+        true,
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "checkHits": {},
+      "gateViolations": [],
+      "status": "flaky",
+      "taskId": "79",
+      "trials": [
+        false,
+        false,
+        true,
+        false
+      ]
+    },
+    {
+      "checkHits": {},
+      "gateViolations": [],
+      "status": "pass",
+      "taskId": "80",
+      "trials": [
+        true,
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "checkHits": {},
+      "gateViolations": [],
+      "status": "pass",
+      "taskId": "81",
+      "trials": [
+        true,
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "checkHits": {},
+      "gateViolations": [],
+      "status": "pass",
+      "taskId": "82",
+      "trials": [
+        true,
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "checkHits": {},
+      "gateViolations": [],
+      "status": "flaky",
+      "taskId": "83",
+      "trials": [
+        true,
+        false,
+        true,
+        true
+      ]
+    },
+    {
+      "checkHits": {},
+      "gateViolations": [],
+      "status": "flaky",
+      "taskId": "84",
+      "trials": [
+        true,
+        true,
+        true,
+        false
+      ]
+    },
+    {
+      "checkHits": {},
+      "gateViolations": [],
+      "status": "pass",
+      "taskId": "85",
+      "trials": [
+        true,
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "checkHits": {},
+      "gateViolations": [],
+      "status": "pass",
+      "taskId": "86",
+      "trials": [
+        true,
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "checkHits": {},
+      "gateViolations": [],
+      "status": "flaky",
+      "taskId": "87",
+      "trials": [
+        true,
+        false,
+        true,
+        true
+      ]
+    },
+    {
+      "checkHits": {},
+      "gateViolations": [],
+      "status": "pass",
+      "taskId": "88",
+      "trials": [
+        true,
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "checkHits": {
+        "auth-first": 4
+      },
+      "gateViolations": [],
+      "status": "pass",
+      "taskId": "89",
+      "trials": [
+        true,
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "checkHits": {},
+      "gateViolations": [],
+      "status": "pass",
+      "taskId": "90",
+      "trials": [
+        true,
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "checkHits": {},
+      "gateViolations": [],
+      "status": "flaky",
+      "taskId": "91",
+      "trials": [
+        true,
+        false,
+        false,
+        true
+      ]
+    },
+    {
+      "checkHits": {},
+      "gateViolations": [],
+      "status": "flaky",
+      "taskId": "92",
+      "trials": [
+        true,
+        false,
+        true,
+        false
+      ]
+    },
+    {
+      "checkHits": {},
+      "gateViolations": [],
+      "status": "pass",
+      "taskId": "93",
+      "trials": [
+        true,
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "checkHits": {},
+      "gateViolations": [],
+      "status": "flaky",
+      "taskId": "94",
+      "trials": [
+        true,
+        true,
+        false,
+        true
+      ]
+    },
+    {
+      "checkHits": {},
+      "gateViolations": [],
+      "status": "flaky",
+      "taskId": "95",
+      "trials": [
+        true,
+        false,
+        true,
+        false
+      ]
+    },
+    {
+      "checkHits": {},
+      "gateViolations": [],
+      "status": "pass",
+      "taskId": "96",
+      "trials": [
+        true,
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "checkHits": {},
+      "gateViolations": [],
+      "status": "pass",
+      "taskId": "97",
+      "trials": [
+        true,
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "checkHits": {},
+      "gateViolations": [],
+      "status": "flaky",
+      "taskId": "98",
+      "trials": [
+        true,
+        false,
+        true,
+        false
+      ]
+    },
+    {
+      "checkHits": {},
+      "gateViolations": [],
+      "status": "flaky",
+      "taskId": "99",
+      "trials": [
+        true,
+        false,
+        false,
+        false
+      ]
+    },
+    {
+      "checkHits": {},
+      "gateViolations": [],
+      "status": "flaky",
+      "taskId": "100",
+      "trials": [
+        false,
+        false,
+        false,
+        true
+      ]
+    },
+    {
+      "checkHits": {},
+      "gateViolations": [],
+      "status": "pass",
+      "taskId": "101",
+      "trials": [
+        true,
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "checkHits": {},
+      "gateViolations": [],
+      "status": "pass",
+      "taskId": "102",
+      "trials": [
+        true,
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "checkHits": {},
+      "gateViolations": [],
+      "status": "flaky",
+      "taskId": "103",
+      "trials": [
+        false,
+        false,
+        true,
+        true
+      ]
+    },
+    {
+      "checkHits": {},
+      "gateViolations": [],
+      "status": "flaky",
+      "taskId": "104",
+      "trials": [
+        false,
+        true,
+        true,
+        false
+      ]
+    },
+    {
+      "checkHits": {
+        "write-error": 2
+      },
+      "gateViolations": [],
+      "status": "flaky",
+      "taskId": "105",
+      "trials": [
+        false,
+        true,
+        false,
+        true
+      ]
+    },
+    {
+      "checkHits": {},
+      "gateViolations": [],
+      "status": "pass",
+      "taskId": "106",
+      "trials": [
+        true,
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "checkHits": {},
+      "gateViolations": [],
+      "status": "fail",
+      "taskId": "107",
+      "trials": [
+        false,
+        false,
+        false,
+        false
+      ]
+    },
+    {
+      "checkHits": {},
+      "gateViolations": [],
+      "status": "pass",
+      "taskId": "108",
+      "trials": [
+        true,
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "checkHits": {},
+      "gateViolations": [],
+      "status": "flaky",
+      "taskId": "109",
+      "trials": [
+        false,
+        true,
+        true,
+        false
+      ]
+    },
+    {
+      "checkHits": {},
+      "gateViolations": [],
+      "status": "flaky",
+      "taskId": "110",
+      "trials": [
+        false,
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "checkHits": {},
+      "gateViolations": [],
+      "status": "flaky",
+      "taskId": "111",
+      "trials": [
+        true,
+        true,
+        false,
+        true
+      ]
+    },
+    {
+      "checkHits": {
+        "same-product": 2
+      },
+      "gateViolations": [],
+      "status": "fail",
+      "taskId": "112",
+      "trials": [
+        false,
+        false,
+        false,
+        false
+      ]
+    },
+    {
+      "checkHits": {},
+      "gateViolations": [],
+      "status": "flaky",
+      "taskId": "113",
+      "trials": [
+        true,
+        true,
+        false,
+        true
+      ]
+    }
+  ],
+  "tasks": 114,
+  "trajectories": 456,
+  "trajectoryResults": [
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/000/t0",
+      "judge": null,
+      "passed": true,
+      "taskId": "0",
+      "terminationReason": "user_stop",
+      "trial": 0
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/000/t1",
+      "judge": null,
+      "passed": true,
+      "taskId": "0",
+      "terminationReason": "user_stop",
+      "trial": 1
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/000/t2",
+      "judge": null,
+      "passed": true,
+      "taskId": "0",
+      "terminationReason": "user_stop",
+      "trial": 2
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/000/t3",
+      "judge": null,
+      "passed": true,
+      "taskId": "0",
+      "terminationReason": "user_stop",
+      "trial": 3
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/001/t0",
+      "judge": null,
+      "passed": true,
+      "taskId": "1",
+      "terminationReason": "user_stop",
+      "trial": 0
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/001/t1",
+      "judge": null,
+      "passed": true,
+      "taskId": "1",
+      "terminationReason": "user_stop",
+      "trial": 1
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/001/t2",
+      "judge": null,
+      "passed": true,
+      "taskId": "1",
+      "terminationReason": "user_stop",
+      "trial": 2
+    },
+    {
+      "bucket": "ended-in-transfer",
+      "expectedDiff": [
+        {
+          "check": "expected-writes",
+          "message": "missing write exchange_delivered_order_items {\"item_ids\":[\"4983901480\"],\"new_item_ids\":[\"7747408585\"],\"order_id\":\"#W2378156\",\"payment_method_id\":\"credit_card_9513926\"}",
+          "severity": "major",
+          "turnIdx": null
+        }
+      ],
+      "findings": [],
+      "id": "opus45/001/t3",
+      "judge": null,
+      "passed": false,
+      "taskId": "1",
+      "terminationReason": "user_stop",
+      "trial": 3
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/002/t0",
+      "judge": null,
+      "passed": true,
+      "taskId": "2",
+      "terminationReason": "user_stop",
+      "trial": 0
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/002/t1",
+      "judge": null,
+      "passed": true,
+      "taskId": "2",
+      "terminationReason": "user_stop",
+      "trial": 1
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/002/t2",
+      "judge": null,
+      "passed": true,
+      "taskId": "2",
+      "terminationReason": "user_stop",
+      "trial": 2
+    },
+    {
+      "bucket": "sim-stop-on-confirm",
+      "expectedDiff": [
+        {
+          "check": "expected-writes",
+          "message": "missing write return_delivered_order_items {\"item_ids\":[\"4602305039\",\"4202497723\",\"9408160950\"],\"order_id\":\"#W2378156\",\"payment_method_id\":\"credit_card_9513926\"}",
+          "severity": "major",
+          "turnIdx": null
+        }
+      ],
+      "findings": [],
+      "id": "opus45/002/t3",
+      "judge": null,
+      "passed": false,
+      "taskId": "2",
+      "terminationReason": "user_stop",
+      "trial": 3
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [
+        {
+          "check": "auth-first",
+          "message": "get_product_details called before the user was authenticated",
+          "severity": "major",
+          "turnIdx": 4
+        }
+      ],
+      "id": "opus45/003/t0",
+      "judge": null,
+      "passed": true,
+      "taskId": "3",
+      "terminationReason": "user_stop",
+      "trial": 0
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [
+        {
+          "check": "auth-first",
+          "message": "get_product_details called before the user was authenticated",
+          "severity": "major",
+          "turnIdx": 4
+        }
+      ],
+      "id": "opus45/003/t1",
+      "judge": null,
+      "passed": true,
+      "taskId": "3",
+      "terminationReason": "user_stop",
+      "trial": 1
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/003/t2",
+      "judge": null,
+      "passed": true,
+      "taskId": "3",
+      "terminationReason": "user_stop",
+      "trial": 2
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [
+        {
+          "check": "auth-first",
+          "message": "get_product_details called before the user was authenticated",
+          "severity": "major",
+          "turnIdx": 4
+        }
+      ],
+      "id": "opus45/003/t3",
+      "judge": null,
+      "passed": true,
+      "taskId": "3",
+      "terminationReason": "user_stop",
+      "trial": 3
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [
+        {
+          "check": "auth-first",
+          "message": "get_product_details called before the user was authenticated",
+          "severity": "major",
+          "turnIdx": 4
+        }
+      ],
+      "id": "opus45/004/t0",
+      "judge": null,
+      "passed": true,
+      "taskId": "4",
+      "terminationReason": "user_stop",
+      "trial": 0
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [
+        {
+          "check": "auth-first",
+          "message": "get_product_details called before the user was authenticated",
+          "severity": "major",
+          "turnIdx": 4
+        }
+      ],
+      "id": "opus45/004/t1",
+      "judge": null,
+      "passed": true,
+      "taskId": "4",
+      "terminationReason": "user_stop",
+      "trial": 1
+    },
+    {
+      "bucket": "wrong-variant",
+      "expectedDiff": [
+        {
+          "check": "expected-writes",
+          "message": "wrong argument in modify_pending_order_items: new_item_ids: expected [\"9647292434\"], got [\"1176194968\"]",
+          "severity": "major",
+          "turnIdx": 26
+        }
+      ],
+      "findings": [
+        {
+          "check": "auth-first",
+          "message": "get_product_details called before the user was authenticated",
+          "severity": "major",
+          "turnIdx": 4
+        }
+      ],
+      "id": "opus45/004/t2",
+      "judge": null,
+      "passed": false,
+      "taskId": "4",
+      "terminationReason": "user_stop",
+      "trial": 2
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [
+        {
+          "check": "auth-first",
+          "message": "get_product_details called before the user was authenticated",
+          "severity": "major",
+          "turnIdx": 4
+        }
+      ],
+      "id": "opus45/004/t3",
+      "judge": null,
+      "passed": true,
+      "taskId": "4",
+      "terminationReason": "user_stop",
+      "trial": 3
+    },
+    {
+      "bucket": "sim-stop-on-confirm",
+      "expectedDiff": [
+        {
+          "check": "expected-writes",
+          "message": "missing write return_delivered_order_items {\"item_ids\":[\"8538875209\"],\"order_id\":\"#W6390527\",\"payment_method_id\":\"paypal_7644869\"}",
+          "severity": "major",
+          "turnIdx": null
+        }
+      ],
+      "findings": [],
+      "id": "opus45/005/t0",
+      "judge": null,
+      "passed": false,
+      "taskId": "5",
+      "terminationReason": "user_stop",
+      "trial": 0
+    },
+    {
+      "bucket": "sim-stop-on-confirm",
+      "expectedDiff": [
+        {
+          "check": "expected-writes",
+          "message": "missing write return_delivered_order_items {\"item_ids\":[\"8538875209\"],\"order_id\":\"#W6390527\",\"payment_method_id\":\"paypal_7644869\"}",
+          "severity": "major",
+          "turnIdx": null
+        }
+      ],
+      "findings": [],
+      "id": "opus45/005/t1",
+      "judge": null,
+      "passed": false,
+      "taskId": "5",
+      "terminationReason": "user_stop",
+      "trial": 1
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/005/t2",
+      "judge": null,
+      "passed": true,
+      "taskId": "5",
+      "terminationReason": "user_stop",
+      "trial": 2
+    },
+    {
+      "bucket": "ended-in-transfer",
+      "expectedDiff": [
+        {
+          "check": "expected-writes",
+          "message": "missing write return_delivered_order_items {\"item_ids\":[\"8538875209\"],\"order_id\":\"#W6390527\",\"payment_method_id\":\"paypal_7644869\"}",
+          "severity": "major",
+          "turnIdx": null
+        },
+        {
+          "check": "expected-writes",
+          "message": "unexpected write exchange_delivered_order_items {\"item_ids\":[\"8384507844\"],\"new_item_ids\":[\"7453605304\"],\"order_id\":\"#W6390527\",\"payment_method_id\":\"paypal_7644869\"}",
+          "severity": "major",
+          "turnIdx": 21
+        }
+      ],
+      "findings": [],
+      "id": "opus45/005/t3",
+      "judge": null,
+      "passed": false,
+      "taskId": "5",
+      "terminationReason": "user_stop",
+      "trial": 3
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/006/t0",
+      "judge": null,
+      "passed": true,
+      "taskId": "6",
+      "terminationReason": "user_stop",
+      "trial": 0
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/006/t1",
+      "judge": null,
+      "passed": true,
+      "taskId": "6",
+      "terminationReason": "user_stop",
+      "trial": 1
+    },
+    {
+      "bucket": "sim-stop-on-confirm",
+      "expectedDiff": [
+        {
+          "check": "expected-writes",
+          "message": "missing write exchange_delivered_order_items {\"item_ids\":[\"8384507844\"],\"new_item_ids\":[\"7453605304\"],\"order_id\":\"#W6390527\",\"payment_method_id\":\"paypal_7644869\"}",
+          "severity": "major",
+          "turnIdx": null
+        }
+      ],
+      "findings": [],
+      "id": "opus45/006/t2",
+      "judge": null,
+      "passed": false,
+      "taskId": "6",
+      "terminationReason": "user_stop",
+      "trial": 2
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/006/t3",
+      "judge": null,
+      "passed": true,
+      "taskId": "6",
+      "terminationReason": "user_stop",
+      "trial": 3
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/007/t0",
+      "judge": null,
+      "passed": true,
+      "taskId": "7",
+      "terminationReason": "user_stop",
+      "trial": 0
+    },
+    {
+      "bucket": "sim-stop-on-confirm",
+      "expectedDiff": [
+        {
+          "check": "expected-writes",
+          "message": "missing write exchange_delivered_order_items {\"item_ids\":[\"8384507844\"],\"new_item_ids\":[\"1569765161\"],\"order_id\":\"#W6390527\",\"payment_method_id\":\"paypal_7644869\"}",
+          "severity": "major",
+          "turnIdx": null
+        }
+      ],
+      "findings": [],
+      "id": "opus45/007/t1",
+      "judge": null,
+      "passed": false,
+      "taskId": "7",
+      "terminationReason": "user_stop",
+      "trial": 1
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/007/t2",
+      "judge": null,
+      "passed": true,
+      "taskId": "7",
+      "terminationReason": "user_stop",
+      "trial": 2
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/007/t3",
+      "judge": null,
+      "passed": true,
+      "taskId": "7",
+      "terminationReason": "user_stop",
+      "trial": 3
+    },
+    {
+      "bucket": "sim-stop-on-confirm",
+      "expectedDiff": [
+        {
+          "check": "expected-writes",
+          "message": "missing write exchange_delivered_order_items {\"item_ids\":[\"8384507844\"],\"new_item_ids\":[\"9083642334\"],\"order_id\":\"#W6390527\",\"payment_method_id\":\"paypal_7644869\"}",
+          "severity": "major",
+          "turnIdx": null
+        }
+      ],
+      "findings": [],
+      "id": "opus45/008/t0",
+      "judge": null,
+      "passed": false,
+      "taskId": "8",
+      "terminationReason": "user_stop",
+      "trial": 0
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/008/t1",
+      "judge": null,
+      "passed": true,
+      "taskId": "8",
+      "terminationReason": "user_stop",
+      "trial": 1
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/008/t2",
+      "judge": null,
+      "passed": true,
+      "taskId": "8",
+      "terminationReason": "user_stop",
+      "trial": 2
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/008/t3",
+      "judge": null,
+      "passed": true,
+      "taskId": "8",
+      "terminationReason": "user_stop",
+      "trial": 3
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/009/t0",
+      "judge": null,
+      "passed": true,
+      "taskId": "9",
+      "terminationReason": "user_stop",
+      "trial": 0
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/009/t1",
+      "judge": null,
+      "passed": true,
+      "taskId": "9",
+      "terminationReason": "user_stop",
+      "trial": 1
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/009/t2",
+      "judge": null,
+      "passed": true,
+      "taskId": "9",
+      "terminationReason": "user_stop",
+      "trial": 2
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/009/t3",
+      "judge": null,
+      "passed": true,
+      "taskId": "9",
+      "terminationReason": "user_stop",
+      "trial": 3
+    },
+    {
+      "bucket": "unwarranted-write",
+      "expectedDiff": [
+        {
+          "check": "expected-writes",
+          "message": "unexpected write return_delivered_order_items {\"item_ids\":[\"4579334072\",\"1421289881\",\"6117189161\",\"4947717507\"],\"order_id\":\"#W5490111\",\"payment_method_id\":\"credit_card_3124723\"}",
+          "severity": "major",
+          "turnIdx": 15
+        },
+        {
+          "check": "expected-writes",
+          "message": "unexpected write return_delivered_order_items {\"item_ids\":[\"5796612084\"],\"order_id\":\"#W7387996\",\"payment_method_id\":\"paypal_9497703\"}",
+          "severity": "major",
+          "turnIdx": 15
+        }
+      ],
+      "findings": [],
+      "id": "opus45/010/t0",
+      "judge": null,
+      "passed": false,
+      "taskId": "10",
+      "terminationReason": "user_stop",
+      "trial": 0
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/010/t1",
+      "judge": null,
+      "passed": true,
+      "taskId": "10",
+      "terminationReason": "user_stop",
+      "trial": 1
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/010/t2",
+      "judge": null,
+      "passed": true,
+      "taskId": "10",
+      "terminationReason": "user_stop",
+      "trial": 2
+    },
+    {
+      "bucket": "unwarranted-write",
+      "expectedDiff": [
+        {
+          "check": "expected-writes",
+          "message": "unexpected write return_delivered_order_items {\"item_ids\":[\"4579334072\",\"1421289881\",\"6117189161\",\"4947717507\"],\"order_id\":\"#W5490111\",\"payment_method_id\":\"credit_card_3124723\"}",
+          "severity": "major",
+          "turnIdx": 13
+        },
+        {
+          "check": "expected-writes",
+          "message": "unexpected write return_delivered_order_items {\"item_ids\":[\"5796612084\"],\"order_id\":\"#W7387996\",\"payment_method_id\":\"paypal_9497703\"}",
+          "severity": "major",
+          "turnIdx": 13
+        }
+      ],
+      "findings": [],
+      "id": "opus45/010/t3",
+      "judge": null,
+      "passed": false,
+      "taskId": "10",
+      "terminationReason": "user_stop",
+      "trial": 3
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/011/t0",
+      "judge": null,
+      "passed": true,
+      "taskId": "11",
+      "terminationReason": "user_stop",
+      "trial": 0
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/011/t1",
+      "judge": null,
+      "passed": true,
+      "taskId": "11",
+      "terminationReason": "user_stop",
+      "trial": 1
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/011/t2",
+      "judge": null,
+      "passed": true,
+      "taskId": "11",
+      "terminationReason": "user_stop",
+      "trial": 2
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/011/t3",
+      "judge": null,
+      "passed": true,
+      "taskId": "11",
+      "terminationReason": "user_stop",
+      "trial": 3
+    },
+    {
+      "bucket": "unwarranted-write",
+      "expectedDiff": [
+        {
+          "check": "expected-writes",
+          "message": "unexpected write return_delivered_order_items {\"item_ids\":[\"4579334072\",\"6117189161\",\"4947717507\"],\"order_id\":\"#W5490111\",\"payment_method_id\":\"credit_card_3124723\"}",
+          "severity": "major",
+          "turnIdx": 15
+        }
+      ],
+      "findings": [],
+      "id": "opus45/012/t0",
+      "judge": null,
+      "passed": false,
+      "taskId": "12",
+      "terminationReason": "user_stop",
+      "trial": 0
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/012/t1",
+      "judge": null,
+      "passed": true,
+      "taskId": "12",
+      "terminationReason": "user_stop",
+      "trial": 1
+    },
+    {
+      "bucket": "unwarranted-write",
+      "expectedDiff": [
+        {
+          "check": "expected-writes",
+          "message": "unexpected write return_delivered_order_items {\"item_ids\":[\"4579334072\",\"6117189161\",\"4947717507\"],\"order_id\":\"#W5490111\",\"payment_method_id\":\"credit_card_3124723\"}",
+          "severity": "major",
+          "turnIdx": 15
+        }
+      ],
+      "findings": [],
+      "id": "opus45/012/t2",
+      "judge": null,
+      "passed": false,
+      "taskId": "12",
+      "terminationReason": "user_stop",
+      "trial": 2
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/012/t3",
+      "judge": null,
+      "passed": true,
+      "taskId": "12",
+      "terminationReason": "user_stop",
+      "trial": 3
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/013/t0",
+      "judge": null,
+      "passed": true,
+      "taskId": "13",
+      "terminationReason": "user_stop",
+      "trial": 0
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/013/t1",
+      "judge": null,
+      "passed": true,
+      "taskId": "13",
+      "terminationReason": "user_stop",
+      "trial": 1
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/013/t2",
+      "judge": null,
+      "passed": true,
+      "taskId": "13",
+      "terminationReason": "user_stop",
+      "trial": 2
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/013/t3",
+      "judge": null,
+      "passed": true,
+      "taskId": "13",
+      "terminationReason": "user_stop",
+      "trial": 3
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/014/t0",
+      "judge": null,
+      "passed": true,
+      "taskId": "14",
+      "terminationReason": "user_stop",
+      "trial": 0
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/014/t1",
+      "judge": null,
+      "passed": true,
+      "taskId": "14",
+      "terminationReason": "user_stop",
+      "trial": 1
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/014/t2",
+      "judge": null,
+      "passed": true,
+      "taskId": "14",
+      "terminationReason": "user_stop",
+      "trial": 2
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/014/t3",
+      "judge": null,
+      "passed": true,
+      "taskId": "14",
+      "terminationReason": "user_stop",
+      "trial": 3
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/015/t0",
+      "judge": null,
+      "passed": true,
+      "taskId": "15",
+      "terminationReason": "user_stop",
+      "trial": 0
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/015/t1",
+      "judge": null,
+      "passed": true,
+      "taskId": "15",
+      "terminationReason": "user_stop",
+      "trial": 1
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/015/t2",
+      "judge": null,
+      "passed": true,
+      "taskId": "15",
+      "terminationReason": "user_stop",
+      "trial": 2
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/015/t3",
+      "judge": null,
+      "passed": true,
+      "taskId": "15",
+      "terminationReason": "user_stop",
+      "trial": 3
+    },
+    {
+      "bucket": "sim-stop-on-confirm",
+      "expectedDiff": [
+        {
+          "check": "expected-writes",
+          "message": "missing write cancel_pending_order {\"order_id\":\"#W5199551\",\"reason\":\"no longer needed\"}",
+          "severity": "major",
+          "turnIdx": null
+        },
+        {
+          "check": "expected-writes",
+          "message": "missing write cancel_pending_order {\"order_id\":\"#W8665881\",\"reason\":\"no longer needed\"}",
+          "severity": "major",
+          "turnIdx": null
+        },
+        {
+          "check": "expected-writes",
+          "message": "missing write return_delivered_order_items {\"item_ids\":[\"2554056026\"],\"order_id\":\"#W9389413\",\"payment_method_id\":\"paypal_5364164\"}",
+          "severity": "major",
+          "turnIdx": null
+        }
+      ],
+      "findings": [],
+      "id": "opus45/016/t0",
+      "judge": null,
+      "passed": false,
+      "taskId": "16",
+      "terminationReason": "user_stop",
+      "trial": 0
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/016/t1",
+      "judge": null,
+      "passed": true,
+      "taskId": "16",
+      "terminationReason": "user_stop",
+      "trial": 1
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/016/t2",
+      "judge": null,
+      "passed": true,
+      "taskId": "16",
+      "terminationReason": "user_stop",
+      "trial": 2
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/016/t3",
+      "judge": null,
+      "passed": true,
+      "taskId": "16",
+      "terminationReason": "user_stop",
+      "trial": 3
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/017/t0",
+      "judge": null,
+      "passed": true,
+      "taskId": "17",
+      "terminationReason": "user_stop",
+      "trial": 0
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [
+        {
+          "check": "details-before-confirm",
+          "message": "modify_pending_order_address: no earlier agent message names the order or items it acts on",
+          "severity": "major",
+          "turnIdx": 10
+        }
+      ],
+      "id": "opus45/017/t1",
+      "judge": null,
+      "passed": true,
+      "taskId": "17",
+      "terminationReason": "user_stop",
+      "trial": 1
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/017/t2",
+      "judge": null,
+      "passed": true,
+      "taskId": "17",
+      "terminationReason": "user_stop",
+      "trial": 2
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/017/t3",
+      "judge": null,
+      "passed": true,
+      "taskId": "17",
+      "terminationReason": "user_stop",
+      "trial": 3
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/018/t0",
+      "judge": null,
+      "passed": true,
+      "taskId": "18",
+      "terminationReason": "user_stop",
+      "trial": 0
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/018/t1",
+      "judge": null,
+      "passed": true,
+      "taskId": "18",
+      "terminationReason": "user_stop",
+      "trial": 1
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/018/t2",
+      "judge": null,
+      "passed": true,
+      "taskId": "18",
+      "terminationReason": "user_stop",
+      "trial": 2
+    },
+    {
+      "bucket": "wrong-variant",
+      "expectedDiff": [
+        {
+          "check": "expected-writes",
+          "message": "wrong argument in exchange_delivered_order_items: new_item_ids: expected [\"1071497737\"], got [\"8069050545\"]",
+          "severity": "major",
+          "turnIdx": 21
+        }
+      ],
+      "findings": [],
+      "id": "opus45/018/t3",
+      "judge": null,
+      "passed": false,
+      "taskId": "18",
+      "terminationReason": "user_stop",
+      "trial": 3
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/019/t0",
+      "judge": null,
+      "passed": true,
+      "taskId": "19",
+      "terminationReason": "user_stop",
+      "trial": 0
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/019/t1",
+      "judge": null,
+      "passed": true,
+      "taskId": "19",
+      "terminationReason": "user_stop",
+      "trial": 1
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/019/t2",
+      "judge": null,
+      "passed": true,
+      "taskId": "19",
+      "terminationReason": "user_stop",
+      "trial": 2
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/019/t3",
+      "judge": null,
+      "passed": true,
+      "taskId": "19",
+      "terminationReason": "user_stop",
+      "trial": 3
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/020/t0",
+      "judge": null,
+      "passed": true,
+      "taskId": "20",
+      "terminationReason": "user_stop",
+      "trial": 0
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/020/t1",
+      "judge": null,
+      "passed": true,
+      "taskId": "20",
+      "terminationReason": "user_stop",
+      "trial": 1
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/020/t2",
+      "judge": null,
+      "passed": true,
+      "taskId": "20",
+      "terminationReason": "user_stop",
+      "trial": 2
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/020/t3",
+      "judge": null,
+      "passed": true,
+      "taskId": "20",
+      "terminationReason": "user_stop",
+      "trial": 3
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [
+        {
+          "check": "same-product",
+          "message": "replacement 4107812777 for 9791469541 chosen without fetching product 6938111410",
+          "severity": "minor",
+          "turnIdx": 20
+        },
+        {
+          "check": "same-product",
+          "message": "replacement 1421289881 for 1340995114 chosen without fetching product 1656367028",
+          "severity": "minor",
+          "turnIdx": 20
+        }
+      ],
+      "id": "opus45/021/t0",
+      "judge": null,
+      "passed": true,
+      "taskId": "21",
+      "terminationReason": "user_stop",
+      "trial": 0
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [
+        {
+          "check": "same-product",
+          "message": "replacement 4107812777 for 9791469541 chosen without fetching product 6938111410",
+          "severity": "minor",
+          "turnIdx": 22
+        },
+        {
+          "check": "same-product",
+          "message": "replacement 1421289881 for 1340995114 chosen without fetching product 1656367028",
+          "severity": "minor",
+          "turnIdx": 22
+        }
+      ],
+      "id": "opus45/021/t1",
+      "judge": null,
+      "passed": true,
+      "taskId": "21",
+      "terminationReason": "user_stop",
+      "trial": 1
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [
+        {
+          "check": "same-product",
+          "message": "replacement 4107812777 for 9791469541 chosen without fetching product 6938111410",
+          "severity": "minor",
+          "turnIdx": 23
+        },
+        {
+          "check": "same-product",
+          "message": "replacement 1421289881 for 1340995114 chosen without fetching product 1656367028",
+          "severity": "minor",
+          "turnIdx": 23
+        }
+      ],
+      "id": "opus45/021/t2",
+      "judge": null,
+      "passed": true,
+      "taskId": "21",
+      "terminationReason": "user_stop",
+      "trial": 2
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [
+        {
+          "check": "same-product",
+          "message": "replacement 4107812777 for 9791469541 chosen without fetching product 6938111410",
+          "severity": "minor",
+          "turnIdx": 22
+        },
+        {
+          "check": "same-product",
+          "message": "replacement 1421289881 for 1340995114 chosen without fetching product 1656367028",
+          "severity": "minor",
+          "turnIdx": 22
+        }
+      ],
+      "id": "opus45/021/t3",
+      "judge": null,
+      "passed": true,
+      "taskId": "21",
+      "terminationReason": "user_stop",
+      "trial": 3
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/022/t0",
+      "judge": null,
+      "passed": true,
+      "taskId": "22",
+      "terminationReason": "user_stop",
+      "trial": 0
+    },
+    {
+      "bucket": "ended-in-transfer",
+      "expectedDiff": [
+        {
+          "check": "expected-writes",
+          "message": "missing write modify_user_address {\"address1\":\"667 Highland Drive\",\"address2\":\"Suite 865\",\"city\":\"Denver\",\"country\":\"USA\",\"state\":\"CO\",\"user_id\":\"ethan_garcia_1261\",\"zip\":\"80280\"}",
+          "severity": "major",
+          "turnIdx": null
+        }
+      ],
+      "findings": [],
+      "id": "opus45/022/t1",
+      "judge": null,
+      "passed": false,
+      "taskId": "22",
+      "terminationReason": "user_stop",
+      "trial": 1
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/022/t2",
+      "judge": null,
+      "passed": true,
+      "taskId": "22",
+      "terminationReason": "user_stop",
+      "trial": 2
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/022/t3",
+      "judge": null,
+      "passed": true,
+      "taskId": "22",
+      "terminationReason": "user_stop",
+      "trial": 3
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/023/t0",
+      "judge": null,
+      "passed": true,
+      "taskId": "23",
+      "terminationReason": "user_stop",
+      "trial": 0
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/023/t1",
+      "judge": null,
+      "passed": true,
+      "taskId": "23",
+      "terminationReason": "user_stop",
+      "trial": 1
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/023/t2",
+      "judge": null,
+      "passed": true,
+      "taskId": "23",
+      "terminationReason": "user_stop",
+      "trial": 2
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/023/t3",
+      "judge": null,
+      "passed": true,
+      "taskId": "23",
+      "terminationReason": "user_stop",
+      "trial": 3
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/024/t0",
+      "judge": null,
+      "passed": true,
+      "taskId": "24",
+      "terminationReason": "user_stop",
+      "trial": 0
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/024/t1",
+      "judge": null,
+      "passed": true,
+      "taskId": "24",
+      "terminationReason": "user_stop",
+      "trial": 1
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/024/t2",
+      "judge": null,
+      "passed": true,
+      "taskId": "24",
+      "terminationReason": "user_stop",
+      "trial": 2
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/024/t3",
+      "judge": null,
+      "passed": true,
+      "taskId": "24",
+      "terminationReason": "user_stop",
+      "trial": 3
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/025/t0",
+      "judge": null,
+      "passed": true,
+      "taskId": "25",
+      "terminationReason": "user_stop",
+      "trial": 0
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/025/t1",
+      "judge": null,
+      "passed": true,
+      "taskId": "25",
+      "terminationReason": "user_stop",
+      "trial": 1
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/025/t2",
+      "judge": null,
+      "passed": true,
+      "taskId": "25",
+      "terminationReason": "user_stop",
+      "trial": 2
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/025/t3",
+      "judge": null,
+      "passed": true,
+      "taskId": "25",
+      "terminationReason": "user_stop",
+      "trial": 3
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/026/t0",
+      "judge": null,
+      "passed": true,
+      "taskId": "26",
+      "terminationReason": "user_stop",
+      "trial": 0
+    },
+    {
+      "bucket": "ended-in-transfer",
+      "expectedDiff": [
+        {
+          "check": "expected-writes",
+          "message": "missing write return_delivered_order_items {\"item_ids\":[\"7602931732\",\"9570044148\"],\"order_id\":\"#W5565470\",\"payment_method_id\":\"paypal_3024827\"}",
+          "severity": "major",
+          "turnIdx": null
+        }
+      ],
+      "findings": [],
+      "id": "opus45/026/t1",
+      "judge": null,
+      "passed": false,
+      "taskId": "26",
+      "terminationReason": "user_stop",
+      "trial": 1
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/026/t2",
+      "judge": null,
+      "passed": true,
+      "taskId": "26",
+      "terminationReason": "user_stop",
+      "trial": 2
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/026/t3",
+      "judge": null,
+      "passed": true,
+      "taskId": "26",
+      "terminationReason": "user_stop",
+      "trial": 3
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/027/t0",
+      "judge": null,
+      "passed": true,
+      "taskId": "27",
+      "terminationReason": "user_stop",
+      "trial": 0
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/027/t1",
+      "judge": null,
+      "passed": true,
+      "taskId": "27",
+      "terminationReason": "user_stop",
+      "trial": 1
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/027/t2",
+      "judge": null,
+      "passed": true,
+      "taskId": "27",
+      "terminationReason": "user_stop",
+      "trial": 2
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/027/t3",
+      "judge": null,
+      "passed": true,
+      "taskId": "27",
+      "terminationReason": "user_stop",
+      "trial": 3
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/028/t0",
+      "judge": null,
+      "passed": true,
+      "taskId": "28",
+      "terminationReason": "user_stop",
+      "trial": 0
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/028/t1",
+      "judge": null,
+      "passed": true,
+      "taskId": "28",
+      "terminationReason": "user_stop",
+      "trial": 1
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/028/t2",
+      "judge": null,
+      "passed": true,
+      "taskId": "28",
+      "terminationReason": "user_stop",
+      "trial": 2
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/028/t3",
+      "judge": null,
+      "passed": true,
+      "taskId": "28",
+      "terminationReason": "user_stop",
+      "trial": 3
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/029/t0",
+      "judge": null,
+      "passed": true,
+      "taskId": "29",
+      "terminationReason": "user_stop",
+      "trial": 0
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/029/t1",
+      "judge": null,
+      "passed": true,
+      "taskId": "29",
+      "terminationReason": "user_stop",
+      "trial": 1
+    },
+    {
+      "bucket": "sim-stop-on-confirm",
+      "expectedDiff": [
+        {
+          "check": "expected-writes",
+          "message": "missing write exchange_delivered_order_items {\"item_ids\":[\"4293355847\"],\"new_item_ids\":[\"8176740019\"],\"order_id\":\"#W3792453\",\"payment_method_id\":\"paypal_3024827\"}",
+          "severity": "major",
+          "turnIdx": null
+        },
+        {
+          "check": "expected-writes",
+          "message": "missing write exchange_delivered_order_items {\"item_ids\":[\"5753502325\"],\"new_item_ids\":[\"5206946487\"],\"order_id\":\"#W7181492\",\"payment_method_id\":\"paypal_3024827\"}",
+          "severity": "major",
+          "turnIdx": null
+        }
+      ],
+      "findings": [],
+      "id": "opus45/029/t2",
+      "judge": null,
+      "passed": false,
+      "taskId": "29",
+      "terminationReason": "user_stop",
+      "trial": 2
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [
+        {
+          "check": "same-product",
+          "message": "replacement 5206946487 for 5753502325 chosen without fetching product 6679515468",
+          "severity": "minor",
+          "turnIdx": 17
+        }
+      ],
+      "id": "opus45/029/t3",
+      "judge": null,
+      "passed": true,
+      "taskId": "29",
+      "terminationReason": "user_stop",
+      "trial": 3
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/030/t0",
+      "judge": null,
+      "passed": true,
+      "taskId": "30",
+      "terminationReason": "user_stop",
+      "trial": 0
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/030/t1",
+      "judge": null,
+      "passed": true,
+      "taskId": "30",
+      "terminationReason": "user_stop",
+      "trial": 1
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [
+        {
+          "check": "confirm-before-write",
+          "message": "cancel_pending_order without explicit confirmation after the details at turn 22; the user said \"No longer needed.\\n\\nOne more thing: I also need to **return the sneaker** I bought. Can you help me start that return too\"",
+          "severity": "critical",
+          "turnIdx": 24
+        }
+      ],
+      "id": "opus45/030/t2",
+      "judge": null,
+      "passed": true,
+      "taskId": "30",
+      "terminationReason": "user_stop",
+      "trial": 2
+    },
+    {
+      "bucket": "sim-stop-on-confirm",
+      "expectedDiff": [
+        {
+          "check": "expected-writes",
+          "message": "missing write return_delivered_order_items {\"item_ids\":[\"6477915553\"],\"order_id\":\"#W7449508\",\"payment_method_id\":\"gift_card_7711863\"}",
+          "severity": "major",
+          "turnIdx": null
+        }
+      ],
+      "findings": [],
+      "id": "opus45/030/t3",
+      "judge": null,
+      "passed": false,
+      "taskId": "30",
+      "terminationReason": "user_stop",
+      "trial": 3
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/031/t0",
+      "judge": null,
+      "passed": true,
+      "taskId": "31",
+      "terminationReason": "user_stop",
+      "trial": 0
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/031/t1",
+      "judge": null,
+      "passed": true,
+      "taskId": "31",
+      "terminationReason": "user_stop",
+      "trial": 1
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/031/t2",
+      "judge": null,
+      "passed": true,
+      "taskId": "31",
+      "terminationReason": "user_stop",
+      "trial": 2
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/031/t3",
+      "judge": null,
+      "passed": true,
+      "taskId": "31",
+      "terminationReason": "user_stop",
+      "trial": 3
+    },
+    {
+      "bucket": "sim-stop-on-confirm",
+      "expectedDiff": [
+        {
+          "check": "expected-writes",
+          "message": "missing write return_delivered_order_items {\"item_ids\":[\"6477915553\"],\"order_id\":\"#W7449508\",\"payment_method_id\":\"gift_card_7711863\"}",
+          "severity": "major",
+          "turnIdx": null
+        }
+      ],
+      "findings": [],
+      "id": "opus45/032/t0",
+      "judge": null,
+      "passed": false,
+      "taskId": "32",
+      "terminationReason": "user_stop",
+      "trial": 0
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/032/t1",
+      "judge": null,
+      "passed": true,
+      "taskId": "32",
+      "terminationReason": "user_stop",
+      "trial": 1
+    },
+    {
+      "bucket": "ended-in-transfer",
+      "expectedDiff": [
+        {
+          "check": "expected-writes",
+          "message": "missing write cancel_pending_order {\"order_id\":\"#W9373487\",\"reason\":\"no longer needed\"}",
+          "severity": "major",
+          "turnIdx": null
+        },
+        {
+          "check": "expected-writes",
+          "message": "missing write cancel_pending_order {\"order_id\":\"#W5481803\",\"reason\":\"no longer needed\"}",
+          "severity": "major",
+          "turnIdx": null
+        },
+        {
+          "check": "expected-writes",
+          "message": "missing write return_delivered_order_items {\"item_ids\":[\"6477915553\"],\"order_id\":\"#W7449508\",\"payment_method_id\":\"gift_card_7711863\"}",
+          "severity": "major",
+          "turnIdx": null
+        }
+      ],
+      "findings": [],
+      "id": "opus45/032/t2",
+      "judge": null,
+      "passed": false,
+      "taskId": "32",
+      "terminationReason": "user_stop",
+      "trial": 2
+    },
+    {
+      "bucket": "ended-in-transfer",
+      "expectedDiff": [
+        {
+          "check": "expected-writes",
+          "message": "missing write cancel_pending_order {\"order_id\":\"#W9373487\",\"reason\":\"no longer needed\"}",
+          "severity": "major",
+          "turnIdx": null
+        },
+        {
+          "check": "expected-writes",
+          "message": "missing write cancel_pending_order {\"order_id\":\"#W5481803\",\"reason\":\"no longer needed\"}",
+          "severity": "major",
+          "turnIdx": null
+        },
+        {
+          "check": "expected-writes",
+          "message": "missing write return_delivered_order_items {\"item_ids\":[\"6477915553\"],\"order_id\":\"#W7449508\",\"payment_method_id\":\"gift_card_7711863\"}",
+          "severity": "major",
+          "turnIdx": null
+        }
+      ],
+      "findings": [],
+      "id": "opus45/032/t3",
+      "judge": null,
+      "passed": false,
+      "taskId": "32",
+      "terminationReason": "user_stop",
+      "trial": 3
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/033/t0",
+      "judge": null,
+      "passed": true,
+      "taskId": "33",
+      "terminationReason": "user_stop",
+      "trial": 0
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/033/t1",
+      "judge": null,
+      "passed": true,
+      "taskId": "33",
+      "terminationReason": "user_stop",
+      "trial": 1
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/033/t2",
+      "judge": null,
+      "passed": true,
+      "taskId": "33",
+      "terminationReason": "user_stop",
+      "trial": 2
+    },
+    {
+      "bucket": "sim-stop-on-confirm",
+      "expectedDiff": [
+        {
+          "check": "expected-writes",
+          "message": "missing write modify_user_address {\"address1\":\"517 Lakeview Drive\",\"address2\":\"Suite 183\",\"city\":\"Seattle\",\"country\":\"USA\",\"state\":\"WA\",\"user_id\":\"noah_patel_6952\",\"zip\":\"98195\"}",
+          "severity": "major",
+          "turnIdx": null
+        }
+      ],
+      "findings": [],
+      "id": "opus45/033/t3",
+      "judge": null,
+      "passed": false,
+      "taskId": "33",
+      "terminationReason": "user_stop",
+      "trial": 3
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/034/t0",
+      "judge": null,
+      "passed": true,
+      "taskId": "34",
+      "terminationReason": "user_stop",
+      "trial": 0
+    },
+    {
+      "bucket": "ended-in-transfer",
+      "expectedDiff": [
+        {
+          "check": "expected-writes",
+          "message": "missing write modify_pending_order_address {\"address1\":\"224 Elm Street\",\"address2\":\"Suite 491\",\"city\":\"New York\",\"country\":\"USA\",\"order_id\":\"#W1845024\",\"state\":\"NY\",\"zip\":\"10108\"}",
+          "severity": "major",
+          "turnIdx": null
+        }
+      ],
+      "findings": [],
+      "id": "opus45/034/t1",
+      "judge": null,
+      "passed": false,
+      "taskId": "34",
+      "terminationReason": "user_stop",
+      "trial": 1
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/034/t2",
+      "judge": null,
+      "passed": true,
+      "taskId": "34",
+      "terminationReason": "user_stop",
+      "trial": 2
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/034/t3",
+      "judge": null,
+      "passed": true,
+      "taskId": "34",
+      "terminationReason": "user_stop",
+      "trial": 3
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/035/t0",
+      "judge": null,
+      "passed": true,
+      "taskId": "35",
+      "terminationReason": "user_stop",
+      "trial": 0
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/035/t1",
+      "judge": null,
+      "passed": true,
+      "taskId": "35",
+      "terminationReason": "user_stop",
+      "trial": 1
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/035/t2",
+      "judge": null,
+      "passed": true,
+      "taskId": "35",
+      "terminationReason": "user_stop",
+      "trial": 2
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/035/t3",
+      "judge": null,
+      "passed": true,
+      "taskId": "35",
+      "terminationReason": "user_stop",
+      "trial": 3
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/036/t0",
+      "judge": null,
+      "passed": true,
+      "taskId": "36",
+      "terminationReason": "user_stop",
+      "trial": 0
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/036/t1",
+      "judge": null,
+      "passed": true,
+      "taskId": "36",
+      "terminationReason": "user_stop",
+      "trial": 1
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/036/t2",
+      "judge": null,
+      "passed": true,
+      "taskId": "36",
+      "terminationReason": "user_stop",
+      "trial": 2
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/036/t3",
+      "judge": null,
+      "passed": true,
+      "taskId": "36",
+      "terminationReason": "user_stop",
+      "trial": 3
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/037/t0",
+      "judge": null,
+      "passed": true,
+      "taskId": "37",
+      "terminationReason": "user_stop",
+      "trial": 0
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/037/t1",
+      "judge": null,
+      "passed": true,
+      "taskId": "37",
+      "terminationReason": "user_stop",
+      "trial": 1
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/037/t2",
+      "judge": null,
+      "passed": true,
+      "taskId": "37",
+      "terminationReason": "user_stop",
+      "trial": 2
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/037/t3",
+      "judge": null,
+      "passed": true,
+      "taskId": "37",
+      "terminationReason": "user_stop",
+      "trial": 3
+    },
+    {
+      "bucket": "wrong-cancel-reason",
+      "expectedDiff": [
+        {
+          "check": "expected-writes",
+          "message": "wrong argument in cancel_pending_order: reason: expected \"no longer needed\", got \"ordered by mistake\"",
+          "severity": "major",
+          "turnIdx": 26
+        }
+      ],
+      "findings": [],
+      "id": "opus45/038/t0",
+      "judge": null,
+      "passed": false,
+      "taskId": "38",
+      "terminationReason": "user_stop",
+      "trial": 0
+    },
+    {
+      "bucket": "wrong-cancel-reason",
+      "expectedDiff": [
+        {
+          "check": "expected-writes",
+          "message": "wrong argument in cancel_pending_order: reason: expected \"no longer needed\", got \"ordered by mistake\"",
+          "severity": "major",
+          "turnIdx": 18
+        }
+      ],
+      "findings": [],
+      "id": "opus45/038/t1",
+      "judge": null,
+      "passed": false,
+      "taskId": "38",
+      "terminationReason": "user_stop",
+      "trial": 1
+    },
+    {
+      "bucket": "sim-stop-on-confirm",
+      "expectedDiff": [
+        {
+          "check": "expected-writes",
+          "message": "missing write cancel_pending_order {\"order_id\":\"#W9348897\",\"reason\":\"no longer needed\"}",
+          "severity": "major",
+          "turnIdx": null
+        }
+      ],
+      "findings": [],
+      "id": "opus45/038/t2",
+      "judge": null,
+      "passed": false,
+      "taskId": "38",
+      "terminationReason": "user_stop",
+      "trial": 2
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/038/t3",
+      "judge": null,
+      "passed": true,
+      "taskId": "38",
+      "terminationReason": "user_stop",
+      "trial": 3
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/039/t0",
+      "judge": null,
+      "passed": true,
+      "taskId": "39",
+      "terminationReason": "user_stop",
+      "trial": 0
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/039/t1",
+      "judge": null,
+      "passed": true,
+      "taskId": "39",
+      "terminationReason": "user_stop",
+      "trial": 1
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/039/t2",
+      "judge": null,
+      "passed": true,
+      "taskId": "39",
+      "terminationReason": "user_stop",
+      "trial": 2
+    },
+    {
+      "bucket": "sim-stop-on-confirm",
+      "expectedDiff": [
+        {
+          "check": "expected-writes",
+          "message": "missing write modify_user_address {\"address1\":\"157 Oak Street\",\"address2\":\"Suite 258\",\"city\":\"Phoenix\",\"country\":\"USA\",\"state\":\"AZ\",\"user_id\":\"fatima_taylor_3452\",\"zip\":\"85033\"}",
+          "severity": "major",
+          "turnIdx": null
+        }
+      ],
+      "findings": [],
+      "id": "opus45/039/t3",
+      "judge": null,
+      "passed": false,
+      "taskId": "39",
+      "terminationReason": "user_stop",
+      "trial": 3
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/040/t0",
+      "judge": null,
+      "passed": true,
+      "taskId": "40",
+      "terminationReason": "user_stop",
+      "trial": 0
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/040/t1",
+      "judge": null,
+      "passed": true,
+      "taskId": "40",
+      "terminationReason": "user_stop",
+      "trial": 1
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/040/t2",
+      "judge": null,
+      "passed": true,
+      "taskId": "40",
+      "terminationReason": "user_stop",
+      "trial": 2
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/040/t3",
+      "judge": null,
+      "passed": true,
+      "taskId": "40",
+      "terminationReason": "user_stop",
+      "trial": 3
+    },
+    {
+      "bucket": "wrong-payment-method",
+      "expectedDiff": [
+        {
+          "check": "expected-writes",
+          "message": "wrong argument in modify_pending_order_items: payment_method_id: expected \"paypal_4768213\", got \"credit_card_9503061\"",
+          "severity": "major",
+          "turnIdx": 17
+        }
+      ],
+      "findings": [],
+      "id": "opus45/041/t0",
+      "judge": null,
+      "passed": false,
+      "taskId": "41",
+      "terminationReason": "user_stop",
+      "trial": 0
+    },
+    {
+      "bucket": "sim-stop-on-confirm",
+      "expectedDiff": [
+        {
+          "check": "expected-writes",
+          "message": "missing write modify_pending_order_address {\"address1\":\"445 Maple Drive\",\"address2\":\"Suite 394\",\"city\":\"Fort Worth\",\"country\":\"USA\",\"order_id\":\"#W9583042\",\"state\":\"TX\",\"zip\":\"76165\"}",
+          "severity": "major",
+          "turnIdx": null
+        },
+        {
+          "check": "expected-writes",
+          "message": "missing write modify_pending_order_address {\"address1\":\"445 Maple Drive\",\"address2\":\"Suite 394\",\"city\":\"Fort Worth\",\"country\":\"USA\",\"order_id\":\"#W4082615\",\"state\":\"TX\",\"zip\":\"76165\"}",
+          "severity": "major",
+          "turnIdx": null
+        },
+        {
+          "check": "expected-writes",
+          "message": "missing write modify_user_address {\"address1\":\"445 Maple Drive\",\"address2\":\"Suite 394\",\"city\":\"Fort Worth\",\"country\":\"USA\",\"state\":\"TX\",\"user_id\":\"mei_patel_7272\",\"zip\":\"76165\"}",
+          "severity": "major",
+          "turnIdx": null
+        },
+        {
+          "check": "expected-writes",
+          "message": "missing write modify_pending_order_items {\"item_ids\":[\"9779102705\"],\"new_item_ids\":[\"1096508426\"],\"order_id\":\"#W4082615\",\"payment_method_id\":\"paypal_4768213\"}",
+          "severity": "major",
+          "turnIdx": null
+        }
+      ],
+      "findings": [],
+      "id": "opus45/041/t1",
+      "judge": null,
+      "passed": false,
+      "taskId": "41",
+      "terminationReason": "user_stop",
+      "trial": 1
+    },
+    {
+      "bucket": "sim-stop-on-confirm",
+      "expectedDiff": [
+        {
+          "check": "expected-writes",
+          "message": "missing write modify_pending_order_address {\"address1\":\"445 Maple Drive\",\"address2\":\"Suite 394\",\"city\":\"Fort Worth\",\"country\":\"USA\",\"order_id\":\"#W9583042\",\"state\":\"TX\",\"zip\":\"76165\"}",
+          "severity": "major",
+          "turnIdx": null
+        },
+        {
+          "check": "expected-writes",
+          "message": "missing write modify_user_address {\"address1\":\"445 Maple Drive\",\"address2\":\"Suite 394\",\"city\":\"Fort Worth\",\"country\":\"USA\",\"state\":\"TX\",\"user_id\":\"mei_patel_7272\",\"zip\":\"76165\"}",
+          "severity": "major",
+          "turnIdx": null
+        }
+      ],
+      "findings": [],
+      "id": "opus45/041/t2",
+      "judge": null,
+      "passed": false,
+      "taskId": "41",
+      "terminationReason": "user_stop",
+      "trial": 2
+    },
+    {
+      "bucket": "sim-stop-on-confirm",
+      "expectedDiff": [
+        {
+          "check": "expected-writes",
+          "message": "missing write modify_pending_order_address {\"address1\":\"445 Maple Drive\",\"address2\":\"Suite 394\",\"city\":\"Fort Worth\",\"country\":\"USA\",\"order_id\":\"#W9583042\",\"state\":\"TX\",\"zip\":\"76165\"}",
+          "severity": "major",
+          "turnIdx": null
+        },
+        {
+          "check": "expected-writes",
+          "message": "missing write modify_pending_order_address {\"address1\":\"445 Maple Drive\",\"address2\":\"Suite 394\",\"city\":\"Fort Worth\",\"country\":\"USA\",\"order_id\":\"#W4082615\",\"state\":\"TX\",\"zip\":\"76165\"}",
+          "severity": "major",
+          "turnIdx": null
+        },
+        {
+          "check": "expected-writes",
+          "message": "missing write modify_user_address {\"address1\":\"445 Maple Drive\",\"address2\":\"Suite 394\",\"city\":\"Fort Worth\",\"country\":\"USA\",\"state\":\"TX\",\"user_id\":\"mei_patel_7272\",\"zip\":\"76165\"}",
+          "severity": "major",
+          "turnIdx": null
+        },
+        {
+          "check": "expected-writes",
+          "message": "missing write modify_pending_order_items {\"item_ids\":[\"9779102705\"],\"new_item_ids\":[\"1096508426\"],\"order_id\":\"#W4082615\",\"payment_method_id\":\"paypal_4768213\"}",
+          "severity": "major",
+          "turnIdx": null
+        }
+      ],
+      "findings": [],
+      "id": "opus45/041/t3",
+      "judge": null,
+      "passed": false,
+      "taskId": "41",
+      "terminationReason": "user_stop",
+      "trial": 3
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/042/t0",
+      "judge": null,
+      "passed": true,
+      "taskId": "42",
+      "terminationReason": "user_stop",
+      "trial": 0
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/042/t1",
+      "judge": null,
+      "passed": true,
+      "taskId": "42",
+      "terminationReason": "user_stop",
+      "trial": 1
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/042/t2",
+      "judge": null,
+      "passed": true,
+      "taskId": "42",
+      "terminationReason": "user_stop",
+      "trial": 2
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/042/t3",
+      "judge": null,
+      "passed": true,
+      "taskId": "42",
+      "terminationReason": "user_stop",
+      "trial": 3
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/043/t0",
+      "judge": null,
+      "passed": true,
+      "taskId": "43",
+      "terminationReason": "user_stop",
+      "trial": 0
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/043/t1",
+      "judge": null,
+      "passed": true,
+      "taskId": "43",
+      "terminationReason": "user_stop",
+      "trial": 1
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/043/t2",
+      "judge": null,
+      "passed": true,
+      "taskId": "43",
+      "terminationReason": "user_stop",
+      "trial": 2
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/043/t3",
+      "judge": null,
+      "passed": true,
+      "taskId": "43",
+      "terminationReason": "user_stop",
+      "trial": 3
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/044/t0",
+      "judge": null,
+      "passed": true,
+      "taskId": "44",
+      "terminationReason": "user_stop",
+      "trial": 0
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/044/t1",
+      "judge": null,
+      "passed": true,
+      "taskId": "44",
+      "terminationReason": "user_stop",
+      "trial": 1
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/044/t2",
+      "judge": null,
+      "passed": true,
+      "taskId": "44",
+      "terminationReason": "user_stop",
+      "trial": 2
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/044/t3",
+      "judge": null,
+      "passed": true,
+      "taskId": "44",
+      "terminationReason": "user_stop",
+      "trial": 3
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/045/t0",
+      "judge": null,
+      "passed": true,
+      "taskId": "45",
+      "terminationReason": "user_stop",
+      "trial": 0
+    },
+    {
+      "bucket": "missing-write",
+      "expectedDiff": [
+        {
+          "check": "expected-writes",
+          "message": "missing write exchange_delivered_order_items {\"item_ids\":[\"6259501109\"],\"new_item_ids\":[\"7958300294\"],\"order_id\":\"#W9502127\",\"payment_method_id\":\"paypal_2433177\"}",
+          "severity": "major",
+          "turnIdx": null
+        },
+        {
+          "check": "expected-writes",
+          "message": "unexpected write return_delivered_order_items {\"item_ids\":[\"6259501109\"],\"order_id\":\"#W9502127\",\"payment_method_id\":\"paypal_2433177\"}",
+          "severity": "major",
+          "turnIdx": 15
+        }
+      ],
+      "findings": [],
+      "id": "opus45/045/t1",
+      "judge": null,
+      "passed": false,
+      "taskId": "45",
+      "terminationReason": "user_stop",
+      "trial": 1
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/045/t2",
+      "judge": null,
+      "passed": true,
+      "taskId": "45",
+      "terminationReason": "user_stop",
+      "trial": 2
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/045/t3",
+      "judge": null,
+      "passed": true,
+      "taskId": "45",
+      "terminationReason": "user_stop",
+      "trial": 3
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [
+        {
+          "check": "expected-writes",
+          "message": "wrong argument in return_delivered_order_items: item_ids: expected [\"6259501109\",\"9534205511\"], got [\"9534205511\",\"6259501109\"]",
+          "severity": "major",
+          "turnIdx": 14
+        }
+      ],
+      "findings": [],
+      "id": "opus45/046/t0",
+      "judge": null,
+      "passed": true,
+      "taskId": "46",
+      "terminationReason": "user_stop",
+      "trial": 0
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [
+        {
+          "check": "expected-writes",
+          "message": "wrong argument in return_delivered_order_items: item_ids: expected [\"6259501109\",\"9534205511\"], got [\"9534205511\",\"6259501109\"]",
+          "severity": "major",
+          "turnIdx": 14
+        }
+      ],
+      "findings": [],
+      "id": "opus45/046/t1",
+      "judge": null,
+      "passed": true,
+      "taskId": "46",
+      "terminationReason": "user_stop",
+      "trial": 1
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [
+        {
+          "check": "expected-writes",
+          "message": "wrong argument in return_delivered_order_items: item_ids: expected [\"6259501109\",\"9534205511\"], got [\"9534205511\",\"6259501109\"]",
+          "severity": "major",
+          "turnIdx": 18
+        }
+      ],
+      "findings": [],
+      "id": "opus45/046/t2",
+      "judge": null,
+      "passed": true,
+      "taskId": "46",
+      "terminationReason": "user_stop",
+      "trial": 2
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [
+        {
+          "check": "expected-writes",
+          "message": "wrong argument in return_delivered_order_items: item_ids: expected [\"6259501109\",\"9534205511\"], got [\"9534205511\",\"6259501109\"]",
+          "severity": "major",
+          "turnIdx": 16
+        }
+      ],
+      "findings": [],
+      "id": "opus45/046/t3",
+      "judge": null,
+      "passed": true,
+      "taskId": "46",
+      "terminationReason": "user_stop",
+      "trial": 3
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [
+        {
+          "check": "expected-writes",
+          "message": "wrong argument in return_delivered_order_items: item_ids: expected [\"2872451762\",\"9534205511\"], got [\"9534205511\",\"2872451762\"]",
+          "severity": "major",
+          "turnIdx": 16
+        }
+      ],
+      "findings": [],
+      "id": "opus45/047/t0",
+      "judge": null,
+      "passed": true,
+      "taskId": "47",
+      "terminationReason": "user_stop",
+      "trial": 0
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/047/t1",
+      "judge": null,
+      "passed": true,
+      "taskId": "47",
+      "terminationReason": "user_stop",
+      "trial": 1
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [
+        {
+          "check": "expected-writes",
+          "message": "wrong argument in return_delivered_order_items: item_ids: expected [\"2872451762\",\"9534205511\"], got [\"9534205511\",\"2872451762\"]",
+          "severity": "major",
+          "turnIdx": 16
+        }
+      ],
+      "findings": [],
+      "id": "opus45/047/t2",
+      "judge": null,
+      "passed": true,
+      "taskId": "47",
+      "terminationReason": "user_stop",
+      "trial": 2
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [
+        {
+          "check": "expected-writes",
+          "message": "wrong argument in return_delivered_order_items: item_ids: expected [\"2872451762\",\"9534205511\"], got [\"9534205511\",\"2872451762\"]",
+          "severity": "major",
+          "turnIdx": 16
+        }
+      ],
+      "findings": [],
+      "id": "opus45/047/t3",
+      "judge": null,
+      "passed": true,
+      "taskId": "47",
+      "terminationReason": "user_stop",
+      "trial": 3
+    },
+    {
+      "bucket": "missing-write",
+      "expectedDiff": [
+        {
+          "check": "expected-writes",
+          "message": "missing write return_delivered_order_items {\"item_ids\":[\"9534205511\"],\"order_id\":\"#W9502127\",\"payment_method_id\":\"paypal_2433177\"}",
+          "severity": "major",
+          "turnIdx": null
+        }
+      ],
+      "findings": [],
+      "id": "opus45/048/t0",
+      "judge": null,
+      "passed": false,
+      "taskId": "48",
+      "terminationReason": "user_stop",
+      "trial": 0
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/048/t1",
+      "judge": null,
+      "passed": true,
+      "taskId": "48",
+      "terminationReason": "user_stop",
+      "trial": 1
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/048/t2",
+      "judge": null,
+      "passed": true,
+      "taskId": "48",
+      "terminationReason": "user_stop",
+      "trial": 2
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/048/t3",
+      "judge": null,
+      "passed": true,
+      "taskId": "48",
+      "terminationReason": "user_stop",
+      "trial": 3
+    },
+    {
+      "bucket": "wrong-variant",
+      "expectedDiff": [
+        {
+          "check": "expected-writes",
+          "message": "wrong argument in exchange_delivered_order_items: new_item_ids: expected [\"1646531091\"], got [\"8555936349\"]",
+          "severity": "major",
+          "turnIdx": 18
+        }
+      ],
+      "findings": [],
+      "id": "opus45/049/t0",
+      "judge": null,
+      "passed": false,
+      "taskId": "49",
+      "terminationReason": "user_stop",
+      "trial": 0
+    },
+    {
+      "bucket": "wrong-variant",
+      "expectedDiff": [
+        {
+          "check": "expected-writes",
+          "message": "wrong argument in exchange_delivered_order_items: new_item_ids: expected [\"1646531091\"], got [\"8555936349\"]",
+          "severity": "major",
+          "turnIdx": 18
+        }
+      ],
+      "findings": [],
+      "id": "opus45/049/t1",
+      "judge": null,
+      "passed": false,
+      "taskId": "49",
+      "terminationReason": "user_stop",
+      "trial": 1
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/049/t2",
+      "judge": null,
+      "passed": true,
+      "taskId": "49",
+      "terminationReason": "user_stop",
+      "trial": 2
+    },
+    {
+      "bucket": "wrong-variant",
+      "expectedDiff": [
+        {
+          "check": "expected-writes",
+          "message": "wrong argument in exchange_delivered_order_items: new_item_ids: expected [\"1646531091\"], got [\"8555936349\"]",
+          "severity": "major",
+          "turnIdx": 18
+        }
+      ],
+      "findings": [],
+      "id": "opus45/049/t3",
+      "judge": null,
+      "passed": false,
+      "taskId": "49",
+      "terminationReason": "user_stop",
+      "trial": 3
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/050/t0",
+      "judge": null,
+      "passed": true,
+      "taskId": "50",
+      "terminationReason": "user_stop",
+      "trial": 0
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/050/t1",
+      "judge": null,
+      "passed": true,
+      "taskId": "50",
+      "terminationReason": "user_stop",
+      "trial": 1
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/050/t2",
+      "judge": null,
+      "passed": true,
+      "taskId": "50",
+      "terminationReason": "user_stop",
+      "trial": 2
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/050/t3",
+      "judge": null,
+      "passed": true,
+      "taskId": "50",
+      "terminationReason": "user_stop",
+      "trial": 3
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/051/t0",
+      "judge": null,
+      "passed": true,
+      "taskId": "51",
+      "terminationReason": "user_stop",
+      "trial": 0
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/051/t1",
+      "judge": null,
+      "passed": true,
+      "taskId": "51",
+      "terminationReason": "user_stop",
+      "trial": 1
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/051/t2",
+      "judge": null,
+      "passed": true,
+      "taskId": "51",
+      "terminationReason": "user_stop",
+      "trial": 2
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/051/t3",
+      "judge": null,
+      "passed": true,
+      "taskId": "51",
+      "terminationReason": "user_stop",
+      "trial": 3
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/052/t0",
+      "judge": null,
+      "passed": true,
+      "taskId": "52",
+      "terminationReason": "user_stop",
+      "trial": 0
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/052/t1",
+      "judge": null,
+      "passed": true,
+      "taskId": "52",
+      "terminationReason": "user_stop",
+      "trial": 1
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/052/t2",
+      "judge": null,
+      "passed": true,
+      "taskId": "52",
+      "terminationReason": "user_stop",
+      "trial": 2
+    },
+    {
+      "bucket": "ended-in-transfer",
+      "expectedDiff": [
+        {
+          "check": "expected-writes",
+          "message": "missing write exchange_delivered_order_items {\"item_ids\":[\"5996159312\"],\"new_item_ids\":[\"9228757377\"],\"order_id\":\"#W4689314\",\"payment_method_id\":\"paypal_8194385\"}",
+          "severity": "major",
+          "turnIdx": null
+        }
+      ],
+      "findings": [],
+      "id": "opus45/052/t3",
+      "judge": null,
+      "passed": false,
+      "taskId": "52",
+      "terminationReason": "user_stop",
+      "trial": 3
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/053/t0",
+      "judge": null,
+      "passed": true,
+      "taskId": "53",
+      "terminationReason": "user_stop",
+      "trial": 0
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/053/t1",
+      "judge": null,
+      "passed": true,
+      "taskId": "53",
+      "terminationReason": "user_stop",
+      "trial": 1
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/053/t2",
+      "judge": null,
+      "passed": true,
+      "taskId": "53",
+      "terminationReason": "user_stop",
+      "trial": 2
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/053/t3",
+      "judge": null,
+      "passed": true,
+      "taskId": "53",
+      "terminationReason": "user_stop",
+      "trial": 3
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/054/t0",
+      "judge": null,
+      "passed": true,
+      "taskId": "54",
+      "terminationReason": "user_stop",
+      "trial": 0
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/054/t1",
+      "judge": null,
+      "passed": true,
+      "taskId": "54",
+      "terminationReason": "user_stop",
+      "trial": 1
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/054/t2",
+      "judge": null,
+      "passed": true,
+      "taskId": "54",
+      "terminationReason": "user_stop",
+      "trial": 2
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/054/t3",
+      "judge": null,
+      "passed": true,
+      "taskId": "54",
+      "terminationReason": "user_stop",
+      "trial": 3
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/055/t0",
+      "judge": null,
+      "passed": true,
+      "taskId": "55",
+      "terminationReason": "user_stop",
+      "trial": 0
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/055/t1",
+      "judge": null,
+      "passed": true,
+      "taskId": "55",
+      "terminationReason": "user_stop",
+      "trial": 1
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/055/t2",
+      "judge": null,
+      "passed": true,
+      "taskId": "55",
+      "terminationReason": "user_stop",
+      "trial": 2
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/055/t3",
+      "judge": null,
+      "passed": true,
+      "taskId": "55",
+      "terminationReason": "user_stop",
+      "trial": 3
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/056/t0",
+      "judge": null,
+      "passed": true,
+      "taskId": "56",
+      "terminationReason": "user_stop",
+      "trial": 0
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/056/t1",
+      "judge": null,
+      "passed": true,
+      "taskId": "56",
+      "terminationReason": "user_stop",
+      "trial": 1
+    },
+    {
+      "bucket": "wrong-variant",
+      "expectedDiff": [
+        {
+          "check": "expected-writes",
+          "message": "wrong argument in modify_pending_order_items: new_item_ids: expected [\"9534205511\"], got [\"9375701158\"]",
+          "severity": "major",
+          "turnIdx": 16
+        }
+      ],
+      "findings": [],
+      "id": "opus45/056/t2",
+      "judge": null,
+      "passed": false,
+      "taskId": "56",
+      "terminationReason": "user_stop",
+      "trial": 2
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/056/t3",
+      "judge": null,
+      "passed": true,
+      "taskId": "56",
+      "terminationReason": "user_stop",
+      "trial": 3
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/057/t0",
+      "judge": null,
+      "passed": true,
+      "taskId": "57",
+      "terminationReason": "user_stop",
+      "trial": 0
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/057/t1",
+      "judge": null,
+      "passed": true,
+      "taskId": "57",
+      "terminationReason": "user_stop",
+      "trial": 1
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/057/t2",
+      "judge": null,
+      "passed": true,
+      "taskId": "57",
+      "terminationReason": "user_stop",
+      "trial": 2
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/057/t3",
+      "judge": null,
+      "passed": true,
+      "taskId": "57",
+      "terminationReason": "user_stop",
+      "trial": 3
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/058/t0",
+      "judge": null,
+      "passed": true,
+      "taskId": "58",
+      "terminationReason": "user_stop",
+      "trial": 0
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/058/t1",
+      "judge": null,
+      "passed": true,
+      "taskId": "58",
+      "terminationReason": "user_stop",
+      "trial": 1
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/058/t2",
+      "judge": null,
+      "passed": true,
+      "taskId": "58",
+      "terminationReason": "user_stop",
+      "trial": 2
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/058/t3",
+      "judge": null,
+      "passed": true,
+      "taskId": "58",
+      "terminationReason": "user_stop",
+      "trial": 3
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/059/t0",
+      "judge": null,
+      "passed": true,
+      "taskId": "59",
+      "terminationReason": "user_stop",
+      "trial": 0
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/059/t1",
+      "judge": null,
+      "passed": true,
+      "taskId": "59",
+      "terminationReason": "user_stop",
+      "trial": 1
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/059/t2",
+      "judge": null,
+      "passed": true,
+      "taskId": "59",
+      "terminationReason": "user_stop",
+      "trial": 2
+    },
+    {
+      "bucket": "missing-write",
+      "expectedDiff": [
+        {
+          "check": "expected-writes",
+          "message": "missing write cancel_pending_order {\"order_id\":\"#W8268610\",\"reason\":\"no longer needed\"}",
+          "severity": "major",
+          "turnIdx": null
+        },
+        {
+          "check": "expected-writes",
+          "message": "missing write modify_pending_order_address {\"address1\":\"1234 Elm St\",\"address2\":\"\",\"city\":\"Springfield\",\"country\":\"USA\",\"order_id\":\"#W2702727\",\"state\":\"IL\",\"zip\":\"62701\"}",
+          "severity": "major",
+          "turnIdx": null
+        },
+        {
+          "check": "expected-writes",
+          "message": "unexpected write cancel_pending_order {\"order_id\":\"#W2702727\",\"reason\":\"no longer needed\"}",
+          "severity": "major",
+          "turnIdx": 14
+        }
+      ],
+      "findings": [],
+      "id": "opus45/059/t3",
+      "judge": null,
+      "passed": false,
+      "taskId": "59",
+      "terminationReason": "user_stop",
+      "trial": 3
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/060/t0",
+      "judge": null,
+      "passed": true,
+      "taskId": "60",
+      "terminationReason": "user_stop",
+      "trial": 0
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/060/t1",
+      "judge": null,
+      "passed": true,
+      "taskId": "60",
+      "terminationReason": "user_stop",
+      "trial": 1
+    },
+    {
+      "bucket": "sim-stop-on-confirm",
+      "expectedDiff": [
+        {
+          "check": "expected-writes",
+          "message": "missing write modify_pending_order_items {\"item_ids\":[\"3694871183\"],\"new_item_ids\":[\"6077640618\"],\"order_id\":\"#W5061109\",\"payment_method_id\":\"paypal_3742148\"}",
+          "severity": "major",
+          "turnIdx": null
+        }
+      ],
+      "findings": [],
+      "id": "opus45/060/t2",
+      "judge": null,
+      "passed": false,
+      "taskId": "60",
+      "terminationReason": "user_stop",
+      "trial": 2
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/060/t3",
+      "judge": null,
+      "passed": true,
+      "taskId": "60",
+      "terminationReason": "user_stop",
+      "trial": 3
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/061/t0",
+      "judge": null,
+      "passed": true,
+      "taskId": "61",
+      "terminationReason": "user_stop",
+      "trial": 0
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/061/t1",
+      "judge": null,
+      "passed": true,
+      "taskId": "61",
+      "terminationReason": "user_stop",
+      "trial": 1
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/061/t2",
+      "judge": null,
+      "passed": true,
+      "taskId": "61",
+      "terminationReason": "user_stop",
+      "trial": 2
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/061/t3",
+      "judge": null,
+      "passed": true,
+      "taskId": "61",
+      "terminationReason": "user_stop",
+      "trial": 3
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/062/t0",
+      "judge": null,
+      "passed": true,
+      "taskId": "62",
+      "terminationReason": "user_stop",
+      "trial": 0
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/062/t1",
+      "judge": null,
+      "passed": true,
+      "taskId": "62",
+      "terminationReason": "user_stop",
+      "trial": 1
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/062/t2",
+      "judge": null,
+      "passed": true,
+      "taskId": "62",
+      "terminationReason": "user_stop",
+      "trial": 2
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/062/t3",
+      "judge": null,
+      "passed": true,
+      "taskId": "62",
+      "terminationReason": "user_stop",
+      "trial": 3
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/063/t0",
+      "judge": null,
+      "passed": true,
+      "taskId": "63",
+      "terminationReason": "user_stop",
+      "trial": 0
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/063/t1",
+      "judge": null,
+      "passed": true,
+      "taskId": "63",
+      "terminationReason": "user_stop",
+      "trial": 1
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/063/t2",
+      "judge": null,
+      "passed": true,
+      "taskId": "63",
+      "terminationReason": "user_stop",
+      "trial": 2
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/063/t3",
+      "judge": null,
+      "passed": true,
+      "taskId": "63",
+      "terminationReason": "user_stop",
+      "trial": 3
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [
+        {
+          "check": "expected-writes",
+          "message": "missing write exchange_delivered_order_items {\"item_ids\":[\"1810466394\"],\"new_item_ids\":[\"6700049080\"],\"order_id\":\"#W7464385\",\"payment_method_id\":\"paypal_1261484\"}",
+          "severity": "major",
+          "turnIdx": null
+        }
+      ],
+      "findings": [],
+      "id": "opus45/064/t0",
+      "judge": null,
+      "passed": true,
+      "taskId": "64",
+      "terminationReason": "user_stop",
+      "trial": 0
+    },
+    {
+      "bucket": "sim-stop-on-confirm",
+      "expectedDiff": [
+        {
+          "check": "expected-writes",
+          "message": "missing write exchange_delivered_order_items {\"item_ids\":[\"1810466394\"],\"new_item_ids\":[\"6700049080\"],\"order_id\":\"#W7464385\",\"payment_method_id\":\"paypal_1261484\"}",
+          "severity": "major",
+          "turnIdx": null
+        },
+        {
+          "check": "expected-writes",
+          "message": "missing write modify_pending_order_items {\"item_ids\":[\"1810466394\"],\"new_item_ids\":[\"6700049080\"],\"order_id\":\"#W7464385\",\"payment_method_id\":\"paypal_1261484\"}",
+          "severity": "major",
+          "turnIdx": null
+        }
+      ],
+      "findings": [],
+      "id": "opus45/064/t1",
+      "judge": null,
+      "passed": false,
+      "taskId": "64",
+      "terminationReason": "user_stop",
+      "trial": 1
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [
+        {
+          "check": "expected-writes",
+          "message": "missing write exchange_delivered_order_items {\"item_ids\":[\"1810466394\"],\"new_item_ids\":[\"6700049080\"],\"order_id\":\"#W7464385\",\"payment_method_id\":\"paypal_1261484\"}",
+          "severity": "major",
+          "turnIdx": null
+        }
+      ],
+      "findings": [],
+      "id": "opus45/064/t2",
+      "judge": null,
+      "passed": true,
+      "taskId": "64",
+      "terminationReason": "user_stop",
+      "trial": 2
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [
+        {
+          "check": "expected-writes",
+          "message": "missing write exchange_delivered_order_items {\"item_ids\":[\"1810466394\"],\"new_item_ids\":[\"6700049080\"],\"order_id\":\"#W7464385\",\"payment_method_id\":\"paypal_1261484\"}",
+          "severity": "major",
+          "turnIdx": null
+        }
+      ],
+      "findings": [],
+      "id": "opus45/064/t3",
+      "judge": null,
+      "passed": true,
+      "taskId": "64",
+      "terminationReason": "user_stop",
+      "trial": 3
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/065/t0",
+      "judge": null,
+      "passed": true,
+      "taskId": "65",
+      "terminationReason": "user_stop",
+      "trial": 0
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/065/t1",
+      "judge": null,
+      "passed": true,
+      "taskId": "65",
+      "terminationReason": "user_stop",
+      "trial": 1
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/065/t2",
+      "judge": null,
+      "passed": true,
+      "taskId": "65",
+      "terminationReason": "user_stop",
+      "trial": 2
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/065/t3",
+      "judge": null,
+      "passed": true,
+      "taskId": "65",
+      "terminationReason": "user_stop",
+      "trial": 3
+    },
+    {
+      "bucket": "wrong-cancel-reason",
+      "expectedDiff": [
+        {
+          "check": "expected-writes",
+          "message": "wrong argument in cancel_pending_order: reason: expected \"no longer needed\", got \"ordered by mistake\"",
+          "severity": "major",
+          "turnIdx": 15
+        }
+      ],
+      "findings": [],
+      "id": "opus45/066/t0",
+      "judge": null,
+      "passed": false,
+      "taskId": "66",
+      "terminationReason": "user_stop",
+      "trial": 0
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/066/t1",
+      "judge": null,
+      "passed": true,
+      "taskId": "66",
+      "terminationReason": "user_stop",
+      "trial": 1
+    },
+    {
+      "bucket": "wrong-cancel-reason",
+      "expectedDiff": [
+        {
+          "check": "expected-writes",
+          "message": "wrong argument in cancel_pending_order: reason: expected \"no longer needed\", got \"ordered by mistake\"",
+          "severity": "major",
+          "turnIdx": 15
+        }
+      ],
+      "findings": [],
+      "id": "opus45/066/t2",
+      "judge": null,
+      "passed": false,
+      "taskId": "66",
+      "terminationReason": "user_stop",
+      "trial": 2
+    },
+    {
+      "bucket": "wrong-cancel-reason",
+      "expectedDiff": [
+        {
+          "check": "expected-writes",
+          "message": "wrong argument in cancel_pending_order: reason: expected \"no longer needed\", got \"ordered by mistake\"",
+          "severity": "major",
+          "turnIdx": 15
+        }
+      ],
+      "findings": [],
+      "id": "opus45/066/t3",
+      "judge": null,
+      "passed": false,
+      "taskId": "66",
+      "terminationReason": "user_stop",
+      "trial": 3
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/067/t0",
+      "judge": null,
+      "passed": true,
+      "taskId": "67",
+      "terminationReason": "user_stop",
+      "trial": 0
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/067/t1",
+      "judge": null,
+      "passed": true,
+      "taskId": "67",
+      "terminationReason": "user_stop",
+      "trial": 1
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/067/t2",
+      "judge": null,
+      "passed": true,
+      "taskId": "67",
+      "terminationReason": "user_stop",
+      "trial": 2
+    },
+    {
+      "bucket": "communication-only",
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/067/t3",
+      "judge": null,
+      "passed": false,
+      "taskId": "67",
+      "terminationReason": "user_stop",
+      "trial": 3
+    },
+    {
+      "bucket": "communication-only",
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/068/t0",
+      "judge": null,
+      "passed": false,
+      "taskId": "68",
+      "terminationReason": "user_stop",
+      "trial": 0
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/068/t1",
+      "judge": null,
+      "passed": true,
+      "taskId": "68",
+      "terminationReason": "user_stop",
+      "trial": 1
+    },
+    {
+      "bucket": "communication-only",
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/068/t2",
+      "judge": null,
+      "passed": false,
+      "taskId": "68",
+      "terminationReason": "user_stop",
+      "trial": 2
+    },
+    {
+      "bucket": "communication-only",
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/068/t3",
+      "judge": null,
+      "passed": false,
+      "taskId": "68",
+      "terminationReason": "user_stop",
+      "trial": 3
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/069/t0",
+      "judge": null,
+      "passed": true,
+      "taskId": "69",
+      "terminationReason": "user_stop",
+      "trial": 0
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/069/t1",
+      "judge": null,
+      "passed": true,
+      "taskId": "69",
+      "terminationReason": "user_stop",
+      "trial": 1
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/069/t2",
+      "judge": null,
+      "passed": true,
+      "taskId": "69",
+      "terminationReason": "user_stop",
+      "trial": 2
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/069/t3",
+      "judge": null,
+      "passed": true,
+      "taskId": "69",
+      "terminationReason": "user_stop",
+      "trial": 3
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/070/t0",
+      "judge": null,
+      "passed": true,
+      "taskId": "70",
+      "terminationReason": "user_stop",
+      "trial": 0
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/070/t1",
+      "judge": null,
+      "passed": true,
+      "taskId": "70",
+      "terminationReason": "user_stop",
+      "trial": 1
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/070/t2",
+      "judge": null,
+      "passed": true,
+      "taskId": "70",
+      "terminationReason": "user_stop",
+      "trial": 2
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/070/t3",
+      "judge": null,
+      "passed": true,
+      "taskId": "70",
+      "terminationReason": "user_stop",
+      "trial": 3
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/071/t0",
+      "judge": null,
+      "passed": true,
+      "taskId": "71",
+      "terminationReason": "user_stop",
+      "trial": 0
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/071/t1",
+      "judge": null,
+      "passed": true,
+      "taskId": "71",
+      "terminationReason": "user_stop",
+      "trial": 1
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/071/t2",
+      "judge": null,
+      "passed": true,
+      "taskId": "71",
+      "terminationReason": "user_stop",
+      "trial": 2
+    },
+    {
+      "bucket": "wrong-payment-method",
+      "expectedDiff": [
+        {
+          "check": "expected-writes",
+          "message": "wrong argument in modify_pending_order_items: payment_method_id: expected \"paypal_7729105\", got \"gift_card_1711656\"",
+          "severity": "major",
+          "turnIdx": 26
+        }
+      ],
+      "findings": [],
+      "id": "opus45/071/t3",
+      "judge": null,
+      "passed": false,
+      "taskId": "71",
+      "terminationReason": "user_stop",
+      "trial": 3
+    },
+    {
+      "bucket": "missing-write",
+      "expectedDiff": [
+        {
+          "check": "expected-writes",
+          "message": "missing write modify_pending_order_address {\"address1\":\"159 Hickory Lane\",\"address2\":\"Suite 995\",\"city\":\"Charlotte\",\"country\":\"USA\",\"order_id\":\"#W5270061\",\"state\":\"NC\",\"zip\":\"28243\"}",
+          "severity": "major",
+          "turnIdx": null
+        }
+      ],
+      "findings": [],
+      "id": "opus45/072/t0",
+      "judge": null,
+      "passed": false,
+      "taskId": "72",
+      "terminationReason": "user_stop",
+      "trial": 0
+    },
+    {
+      "bucket": "missing-write",
+      "expectedDiff": [
+        {
+          "check": "expected-writes",
+          "message": "missing write modify_pending_order_address {\"address1\":\"159 Hickory Lane\",\"address2\":\"Suite 995\",\"city\":\"Charlotte\",\"country\":\"USA\",\"order_id\":\"#W5270061\",\"state\":\"NC\",\"zip\":\"28243\"}",
+          "severity": "major",
+          "turnIdx": null
+        }
+      ],
+      "findings": [],
+      "id": "opus45/072/t1",
+      "judge": null,
+      "passed": false,
+      "taskId": "72",
+      "terminationReason": "user_stop",
+      "trial": 1
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/072/t2",
+      "judge": null,
+      "passed": true,
+      "taskId": "72",
+      "terminationReason": "user_stop",
+      "trial": 2
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/072/t3",
+      "judge": null,
+      "passed": true,
+      "taskId": "72",
+      "terminationReason": "user_stop",
+      "trial": 3
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [
+        {
+          "check": "expected-writes",
+          "message": "wrong argument in return_delivered_order_items: item_ids: expected [\"7228247242\",\"2698416822\",\"8098621301\",\"3320557165\"], got [\"3320557165\",\"2698416822\",\"8098621301\",\"7228247242\"]",
+          "severity": "major",
+          "turnIdx": 12
+        }
+      ],
+      "findings": [],
+      "id": "opus45/073/t0",
+      "judge": null,
+      "passed": true,
+      "taskId": "73",
+      "terminationReason": "user_stop",
+      "trial": 0
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [
+        {
+          "check": "expected-writes",
+          "message": "wrong argument in return_delivered_order_items: item_ids: expected [\"7228247242\",\"2698416822\",\"8098621301\",\"3320557165\"], got [\"3320557165\",\"2698416822\",\"8098621301\",\"7228247242\"]",
+          "severity": "major",
+          "turnIdx": 12
+        }
+      ],
+      "findings": [],
+      "id": "opus45/073/t1",
+      "judge": null,
+      "passed": true,
+      "taskId": "73",
+      "terminationReason": "user_stop",
+      "trial": 1
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [
+        {
+          "check": "expected-writes",
+          "message": "wrong argument in return_delivered_order_items: item_ids: expected [\"7228247242\",\"2698416822\",\"8098621301\",\"3320557165\"], got [\"3320557165\",\"2698416822\",\"8098621301\",\"7228247242\"]",
+          "severity": "major",
+          "turnIdx": 12
+        }
+      ],
+      "findings": [],
+      "id": "opus45/073/t2",
+      "judge": null,
+      "passed": true,
+      "taskId": "73",
+      "terminationReason": "user_stop",
+      "trial": 2
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [
+        {
+          "check": "expected-writes",
+          "message": "wrong argument in return_delivered_order_items: item_ids: expected [\"7228247242\",\"2698416822\",\"8098621301\",\"3320557165\"], got [\"3320557165\",\"2698416822\",\"8098621301\",\"7228247242\"]",
+          "severity": "major",
+          "turnIdx": 12
+        }
+      ],
+      "findings": [],
+      "id": "opus45/073/t3",
+      "judge": null,
+      "passed": true,
+      "taskId": "73",
+      "terminationReason": "user_stop",
+      "trial": 3
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/074/t0",
+      "judge": null,
+      "passed": true,
+      "taskId": "74",
+      "terminationReason": "user_stop",
+      "trial": 0
+    },
+    {
+      "bucket": "sim-stop-on-confirm",
+      "expectedDiff": [
+        {
+          "check": "expected-writes",
+          "message": "missing write cancel_pending_order {\"order_id\":\"#W3189752\",\"reason\":\"no longer needed\"}",
+          "severity": "major",
+          "turnIdx": null
+        },
+        {
+          "check": "expected-writes",
+          "message": "missing write modify_pending_order_items {\"item_ids\":[\"3334537816\"],\"new_item_ids\":[\"3265035808\"],\"order_id\":\"#W5166363\",\"payment_method_id\":\"credit_card_4466831\"}",
+          "severity": "major",
+          "turnIdx": null
+        }
+      ],
+      "findings": [],
+      "id": "opus45/074/t1",
+      "judge": null,
+      "passed": false,
+      "taskId": "74",
+      "terminationReason": "user_stop",
+      "trial": 1
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/074/t2",
+      "judge": null,
+      "passed": true,
+      "taskId": "74",
+      "terminationReason": "user_stop",
+      "trial": 2
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/074/t3",
+      "judge": null,
+      "passed": true,
+      "taskId": "74",
+      "terminationReason": "user_stop",
+      "trial": 3
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/075/t0",
+      "judge": null,
+      "passed": true,
+      "taskId": "75",
+      "terminationReason": "user_stop",
+      "trial": 0
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/075/t1",
+      "judge": null,
+      "passed": true,
+      "taskId": "75",
+      "terminationReason": "user_stop",
+      "trial": 1
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/075/t2",
+      "judge": null,
+      "passed": true,
+      "taskId": "75",
+      "terminationReason": "user_stop",
+      "trial": 2
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/075/t3",
+      "judge": null,
+      "passed": true,
+      "taskId": "75",
+      "terminationReason": "user_stop",
+      "trial": 3
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/076/t0",
+      "judge": null,
+      "passed": true,
+      "taskId": "76",
+      "terminationReason": "user_stop",
+      "trial": 0
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/076/t1",
+      "judge": null,
+      "passed": true,
+      "taskId": "76",
+      "terminationReason": "user_stop",
+      "trial": 1
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/076/t2",
+      "judge": null,
+      "passed": true,
+      "taskId": "76",
+      "terminationReason": "user_stop",
+      "trial": 2
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/076/t3",
+      "judge": null,
+      "passed": true,
+      "taskId": "76",
+      "terminationReason": "user_stop",
+      "trial": 3
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/077/t0",
+      "judge": null,
+      "passed": true,
+      "taskId": "77",
+      "terminationReason": "user_stop",
+      "trial": 0
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/077/t1",
+      "judge": null,
+      "passed": true,
+      "taskId": "77",
+      "terminationReason": "user_stop",
+      "trial": 1
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/077/t2",
+      "judge": null,
+      "passed": true,
+      "taskId": "77",
+      "terminationReason": "user_stop",
+      "trial": 2
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/077/t3",
+      "judge": null,
+      "passed": true,
+      "taskId": "77",
+      "terminationReason": "user_stop",
+      "trial": 3
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/078/t0",
+      "judge": null,
+      "passed": true,
+      "taskId": "78",
+      "terminationReason": "user_stop",
+      "trial": 0
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/078/t1",
+      "judge": null,
+      "passed": true,
+      "taskId": "78",
+      "terminationReason": "user_stop",
+      "trial": 1
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/078/t2",
+      "judge": null,
+      "passed": true,
+      "taskId": "78",
+      "terminationReason": "user_stop",
+      "trial": 2
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/078/t3",
+      "judge": null,
+      "passed": true,
+      "taskId": "78",
+      "terminationReason": "user_stop",
+      "trial": 3
+    },
+    {
+      "bucket": "wrong-variant",
+      "expectedDiff": [
+        {
+          "check": "expected-writes",
+          "message": "wrong argument in modify_pending_order_items: new_item_ids: expected [\"2439754078\"], got [\"7661609223\"]",
+          "severity": "major",
+          "turnIdx": 14
+        }
+      ],
+      "findings": [],
+      "id": "opus45/079/t0",
+      "judge": null,
+      "passed": false,
+      "taskId": "79",
+      "terminationReason": "user_stop",
+      "trial": 0
+    },
+    {
+      "bucket": "sim-stop-on-confirm",
+      "expectedDiff": [
+        {
+          "check": "expected-writes",
+          "message": "missing write modify_pending_order_items {\"item_ids\":[\"3453331371\"],\"new_item_ids\":[\"2439754078\"],\"order_id\":\"#W8661412\",\"payment_method_id\":\"credit_card_7239357\"}",
+          "severity": "major",
+          "turnIdx": null
+        }
+      ],
+      "findings": [],
+      "id": "opus45/079/t1",
+      "judge": null,
+      "passed": false,
+      "taskId": "79",
+      "terminationReason": "user_stop",
+      "trial": 1
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/079/t2",
+      "judge": null,
+      "passed": true,
+      "taskId": "79",
+      "terminationReason": "user_stop",
+      "trial": 2
+    },
+    {
+      "bucket": "wrong-variant",
+      "expectedDiff": [
+        {
+          "check": "expected-writes",
+          "message": "wrong argument in modify_pending_order_items: new_item_ids: expected [\"2439754078\"], got [\"7661609223\"]",
+          "severity": "major",
+          "turnIdx": 14
+        }
+      ],
+      "findings": [],
+      "id": "opus45/079/t3",
+      "judge": null,
+      "passed": false,
+      "taskId": "79",
+      "terminationReason": "user_stop",
+      "trial": 3
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/080/t0",
+      "judge": null,
+      "passed": true,
+      "taskId": "80",
+      "terminationReason": "user_stop",
+      "trial": 0
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/080/t1",
+      "judge": null,
+      "passed": true,
+      "taskId": "80",
+      "terminationReason": "user_stop",
+      "trial": 1
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/080/t2",
+      "judge": null,
+      "passed": true,
+      "taskId": "80",
+      "terminationReason": "user_stop",
+      "trial": 2
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/080/t3",
+      "judge": null,
+      "passed": true,
+      "taskId": "80",
+      "terminationReason": "user_stop",
+      "trial": 3
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/081/t0",
+      "judge": null,
+      "passed": true,
+      "taskId": "81",
+      "terminationReason": "user_stop",
+      "trial": 0
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/081/t1",
+      "judge": null,
+      "passed": true,
+      "taskId": "81",
+      "terminationReason": "user_stop",
+      "trial": 1
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/081/t2",
+      "judge": null,
+      "passed": true,
+      "taskId": "81",
+      "terminationReason": "user_stop",
+      "trial": 2
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/081/t3",
+      "judge": null,
+      "passed": true,
+      "taskId": "81",
+      "terminationReason": "user_stop",
+      "trial": 3
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [
+        {
+          "check": "expected-writes",
+          "message": "wrong argument in return_delivered_order_items: item_ids: expected [\"5952720925\",\"9973034634\",\"7381052709\",\"6065192424\"], got [\"9973034634\",\"5952720925\",\"7381052709\",\"6065192424\"]",
+          "severity": "major",
+          "turnIdx": 17
+        }
+      ],
+      "findings": [],
+      "id": "opus45/082/t0",
+      "judge": null,
+      "passed": true,
+      "taskId": "82",
+      "terminationReason": "user_stop",
+      "trial": 0
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [
+        {
+          "check": "expected-writes",
+          "message": "wrong argument in return_delivered_order_items: item_ids: expected [\"5952720925\",\"9973034634\",\"7381052709\",\"6065192424\"], got [\"9973034634\",\"5952720925\",\"7381052709\",\"6065192424\"]",
+          "severity": "major",
+          "turnIdx": 17
+        }
+      ],
+      "findings": [],
+      "id": "opus45/082/t1",
+      "judge": null,
+      "passed": true,
+      "taskId": "82",
+      "terminationReason": "user_stop",
+      "trial": 1
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [
+        {
+          "check": "expected-writes",
+          "message": "wrong argument in return_delivered_order_items: item_ids: expected [\"5952720925\",\"9973034634\",\"7381052709\",\"6065192424\"], got [\"9973034634\",\"5952720925\",\"7381052709\",\"6065192424\"]",
+          "severity": "major",
+          "turnIdx": 17
+        }
+      ],
+      "findings": [],
+      "id": "opus45/082/t2",
+      "judge": null,
+      "passed": true,
+      "taskId": "82",
+      "terminationReason": "user_stop",
+      "trial": 2
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [
+        {
+          "check": "expected-writes",
+          "message": "wrong argument in return_delivered_order_items: item_ids: expected [\"5952720925\",\"9973034634\",\"7381052709\",\"6065192424\"], got [\"9973034634\",\"5952720925\",\"7381052709\",\"6065192424\"]",
+          "severity": "major",
+          "turnIdx": 17
+        }
+      ],
+      "findings": [],
+      "id": "opus45/082/t3",
+      "judge": null,
+      "passed": true,
+      "taskId": "82",
+      "terminationReason": "user_stop",
+      "trial": 3
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/083/t0",
+      "judge": null,
+      "passed": true,
+      "taskId": "83",
+      "terminationReason": "user_stop",
+      "trial": 0
+    },
+    {
+      "bucket": "missing-write",
+      "expectedDiff": [
+        {
+          "check": "expected-writes",
+          "message": "missing write return_delivered_order_items {\"item_ids\":[\"6065192424\"],\"order_id\":\"#W9571698\",\"payment_method_id\":\"gift_card_7250692\"}",
+          "severity": "major",
+          "turnIdx": null
+        },
+        {
+          "check": "expected-writes",
+          "message": "unexpected write return_delivered_order_items {\"item_ids\":[\"8551474201\"],\"order_id\":\"#W3069600\",\"payment_method_id\":\"credit_card_1565124\"}",
+          "severity": "major",
+          "turnIdx": 17
+        }
+      ],
+      "findings": [],
+      "id": "opus45/083/t1",
+      "judge": null,
+      "passed": false,
+      "taskId": "83",
+      "terminationReason": "user_stop",
+      "trial": 1
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/083/t2",
+      "judge": null,
+      "passed": true,
+      "taskId": "83",
+      "terminationReason": "user_stop",
+      "trial": 2
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/083/t3",
+      "judge": null,
+      "passed": true,
+      "taskId": "83",
+      "terminationReason": "user_stop",
+      "trial": 3
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/084/t0",
+      "judge": null,
+      "passed": true,
+      "taskId": "84",
+      "terminationReason": "user_stop",
+      "trial": 0
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/084/t1",
+      "judge": null,
+      "passed": true,
+      "taskId": "84",
+      "terminationReason": "user_stop",
+      "trial": 1
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/084/t2",
+      "judge": null,
+      "passed": true,
+      "taskId": "84",
+      "terminationReason": "user_stop",
+      "trial": 2
+    },
+    {
+      "bucket": "sim-stop-on-confirm",
+      "expectedDiff": [
+        {
+          "check": "expected-writes",
+          "message": "missing write return_delivered_order_items {\"item_ids\":[\"6065192424\"],\"order_id\":\"#W9571698\",\"payment_method_id\":\"gift_card_7250692\"}",
+          "severity": "major",
+          "turnIdx": null
+        }
+      ],
+      "findings": [],
+      "id": "opus45/084/t3",
+      "judge": null,
+      "passed": false,
+      "taskId": "84",
+      "terminationReason": "user_stop",
+      "trial": 3
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/085/t0",
+      "judge": null,
+      "passed": true,
+      "taskId": "85",
+      "terminationReason": "user_stop",
+      "trial": 0
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/085/t1",
+      "judge": null,
+      "passed": true,
+      "taskId": "85",
+      "terminationReason": "user_stop",
+      "trial": 1
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/085/t2",
+      "judge": null,
+      "passed": true,
+      "taskId": "85",
+      "terminationReason": "user_stop",
+      "trial": 2
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/085/t3",
+      "judge": null,
+      "passed": true,
+      "taskId": "85",
+      "terminationReason": "user_stop",
+      "trial": 3
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/086/t0",
+      "judge": null,
+      "passed": true,
+      "taskId": "86",
+      "terminationReason": "user_stop",
+      "trial": 0
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/086/t1",
+      "judge": null,
+      "passed": true,
+      "taskId": "86",
+      "terminationReason": "user_stop",
+      "trial": 1
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/086/t2",
+      "judge": null,
+      "passed": true,
+      "taskId": "86",
+      "terminationReason": "user_stop",
+      "trial": 2
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/086/t3",
+      "judge": null,
+      "passed": true,
+      "taskId": "86",
+      "terminationReason": "user_stop",
+      "trial": 3
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/087/t0",
+      "judge": null,
+      "passed": true,
+      "taskId": "87",
+      "terminationReason": "user_stop",
+      "trial": 0
+    },
+    {
+      "bucket": "sim-stop-on-confirm",
+      "expectedDiff": [
+        {
+          "check": "expected-writes",
+          "message": "missing write modify_pending_order_address {\"address1\":\"565 Maple Drive\",\"address2\":\"Suite 501\",\"city\":\"Washington\",\"country\":\"USA\",\"order_id\":\"#W2166301\",\"state\":\"DC\",\"zip\":\"20307\"}",
+          "severity": "major",
+          "turnIdx": null
+        },
+        {
+          "check": "expected-writes",
+          "message": "missing write modify_pending_order_address {\"address1\":\"565 Maple Drive\",\"address2\":\"Suite 501\",\"city\":\"Washington\",\"country\":\"USA\",\"order_id\":\"#W2466703\",\"state\":\"DC\",\"zip\":\"20307\"}",
+          "severity": "major",
+          "turnIdx": null
+        },
+        {
+          "check": "expected-writes",
+          "message": "missing write modify_pending_order_address {\"address1\":\"565 Maple Drive\",\"address2\":\"Suite 501\",\"city\":\"Washington\",\"country\":\"USA\",\"order_id\":\"#W6832752\",\"state\":\"DC\",\"zip\":\"20307\"}",
+          "severity": "major",
+          "turnIdx": null
+        },
+        {
+          "check": "expected-writes",
+          "message": "missing write modify_user_address {\"address1\":\"565 Maple Drive\",\"address2\":\"Suite 501\",\"city\":\"Washington\",\"country\":\"USA\",\"state\":\"DC\",\"user_id\":\"yusuf_hernandez_6785\",\"zip\":\"20307\"}",
+          "severity": "major",
+          "turnIdx": null
+        }
+      ],
+      "findings": [],
+      "id": "opus45/087/t1",
+      "judge": null,
+      "passed": false,
+      "taskId": "87",
+      "terminationReason": "user_stop",
+      "trial": 1
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/087/t2",
+      "judge": null,
+      "passed": true,
+      "taskId": "87",
+      "terminationReason": "user_stop",
+      "trial": 2
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/087/t3",
+      "judge": null,
+      "passed": true,
+      "taskId": "87",
+      "terminationReason": "user_stop",
+      "trial": 3
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/088/t0",
+      "judge": null,
+      "passed": true,
+      "taskId": "88",
+      "terminationReason": "user_stop",
+      "trial": 0
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/088/t1",
+      "judge": null,
+      "passed": true,
+      "taskId": "88",
+      "terminationReason": "user_stop",
+      "trial": 1
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/088/t2",
+      "judge": null,
+      "passed": true,
+      "taskId": "88",
+      "terminationReason": "user_stop",
+      "trial": 2
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/088/t3",
+      "judge": null,
+      "passed": true,
+      "taskId": "88",
+      "terminationReason": "user_stop",
+      "trial": 3
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [
+        {
+          "check": "auth-first",
+          "message": "get_product_details called before the user was authenticated",
+          "severity": "major",
+          "turnIdx": 4
+        }
+      ],
+      "id": "opus45/089/t0",
+      "judge": null,
+      "passed": true,
+      "taskId": "89",
+      "terminationReason": "user_stop",
+      "trial": 0
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [
+        {
+          "check": "auth-first",
+          "message": "get_product_details called before the user was authenticated",
+          "severity": "major",
+          "turnIdx": 4
+        }
+      ],
+      "id": "opus45/089/t1",
+      "judge": null,
+      "passed": true,
+      "taskId": "89",
+      "terminationReason": "user_stop",
+      "trial": 1
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [
+        {
+          "check": "auth-first",
+          "message": "get_product_details called before the user was authenticated",
+          "severity": "major",
+          "turnIdx": 4
+        }
+      ],
+      "id": "opus45/089/t2",
+      "judge": null,
+      "passed": true,
+      "taskId": "89",
+      "terminationReason": "user_stop",
+      "trial": 2
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [
+        {
+          "check": "auth-first",
+          "message": "get_product_details called before the user was authenticated",
+          "severity": "major",
+          "turnIdx": 4
+        }
+      ],
+      "id": "opus45/089/t3",
+      "judge": null,
+      "passed": true,
+      "taskId": "89",
+      "terminationReason": "user_stop",
+      "trial": 3
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/090/t0",
+      "judge": null,
+      "passed": true,
+      "taskId": "90",
+      "terminationReason": "user_stop",
+      "trial": 0
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/090/t1",
+      "judge": null,
+      "passed": true,
+      "taskId": "90",
+      "terminationReason": "user_stop",
+      "trial": 1
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/090/t2",
+      "judge": null,
+      "passed": true,
+      "taskId": "90",
+      "terminationReason": "user_stop",
+      "trial": 2
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/090/t3",
+      "judge": null,
+      "passed": true,
+      "taskId": "90",
+      "terminationReason": "user_stop",
+      "trial": 3
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/091/t0",
+      "judge": null,
+      "passed": true,
+      "taskId": "91",
+      "terminationReason": "user_stop",
+      "trial": 0
+    },
+    {
+      "bucket": "wrong-variant",
+      "expectedDiff": [
+        {
+          "check": "expected-writes",
+          "message": "wrong argument in exchange_delivered_order_items: new_item_ids: expected [\"7609274509\"], got [\"9494281769\"]",
+          "severity": "major",
+          "turnIdx": 23
+        }
+      ],
+      "findings": [],
+      "id": "opus45/091/t1",
+      "judge": null,
+      "passed": false,
+      "taskId": "91",
+      "terminationReason": "user_stop",
+      "trial": 1
+    },
+    {
+      "bucket": "sim-stop-on-confirm",
+      "expectedDiff": [
+        {
+          "check": "expected-writes",
+          "message": "missing write return_delivered_order_items {\"item_ids\":[\"4545791457\",\"3098764622\",\"1631806422\"],\"order_id\":\"#W7553978\",\"payment_method_id\":\"credit_card_5902940\"}",
+          "severity": "major",
+          "turnIdx": null
+        },
+        {
+          "check": "expected-writes",
+          "message": "missing write exchange_delivered_order_items {\"item_ids\":[\"9494281769\"],\"new_item_ids\":[\"7609274509\"],\"order_id\":\"#W3239882\",\"payment_method_id\":\"credit_card_5902940\"}",
+          "severity": "major",
+          "turnIdx": null
+        }
+      ],
+      "findings": [],
+      "id": "opus45/091/t2",
+      "judge": null,
+      "passed": false,
+      "taskId": "91",
+      "terminationReason": "user_stop",
+      "trial": 2
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/091/t3",
+      "judge": null,
+      "passed": true,
+      "taskId": "91",
+      "terminationReason": "user_stop",
+      "trial": 3
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/092/t0",
+      "judge": null,
+      "passed": true,
+      "taskId": "92",
+      "terminationReason": "user_stop",
+      "trial": 0
+    },
+    {
+      "bucket": "sim-stop-on-confirm",
+      "expectedDiff": [
+        {
+          "check": "expected-writes",
+          "message": "missing write return_delivered_order_items {\"item_ids\":[\"4545791457\",\"3098764622\",\"1631806422\"],\"order_id\":\"#W7553978\",\"payment_method_id\":\"credit_card_5902940\"}",
+          "severity": "major",
+          "turnIdx": null
+        },
+        {
+          "check": "expected-writes",
+          "message": "missing write return_delivered_order_items {\"item_ids\":[\"9494281769\"],\"order_id\":\"#W3239882\",\"payment_method_id\":\"credit_card_5902940\"}",
+          "severity": "major",
+          "turnIdx": null
+        }
+      ],
+      "findings": [],
+      "id": "opus45/092/t1",
+      "judge": null,
+      "passed": false,
+      "taskId": "92",
+      "terminationReason": "user_stop",
+      "trial": 1
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/092/t2",
+      "judge": null,
+      "passed": true,
+      "taskId": "92",
+      "terminationReason": "user_stop",
+      "trial": 2
+    },
+    {
+      "bucket": "sim-stop-on-confirm",
+      "expectedDiff": [
+        {
+          "check": "expected-writes",
+          "message": "missing write return_delivered_order_items {\"item_ids\":[\"4545791457\",\"3098764622\",\"1631806422\"],\"order_id\":\"#W7553978\",\"payment_method_id\":\"credit_card_5902940\"}",
+          "severity": "major",
+          "turnIdx": null
+        },
+        {
+          "check": "expected-writes",
+          "message": "missing write return_delivered_order_items {\"item_ids\":[\"9494281769\"],\"order_id\":\"#W3239882\",\"payment_method_id\":\"credit_card_5902940\"}",
+          "severity": "major",
+          "turnIdx": null
+        }
+      ],
+      "findings": [],
+      "id": "opus45/092/t3",
+      "judge": null,
+      "passed": false,
+      "taskId": "92",
+      "terminationReason": "user_stop",
+      "trial": 3
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/093/t0",
+      "judge": null,
+      "passed": true,
+      "taskId": "93",
+      "terminationReason": "user_stop",
+      "trial": 0
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/093/t1",
+      "judge": null,
+      "passed": true,
+      "taskId": "93",
+      "terminationReason": "user_stop",
+      "trial": 1
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/093/t2",
+      "judge": null,
+      "passed": true,
+      "taskId": "93",
+      "terminationReason": "user_stop",
+      "trial": 2
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/093/t3",
+      "judge": null,
+      "passed": true,
+      "taskId": "93",
+      "terminationReason": "user_stop",
+      "trial": 3
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/094/t0",
+      "judge": null,
+      "passed": true,
+      "taskId": "94",
+      "terminationReason": "user_stop",
+      "trial": 0
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/094/t1",
+      "judge": null,
+      "passed": true,
+      "taskId": "94",
+      "terminationReason": "user_stop",
+      "trial": 1
+    },
+    {
+      "bucket": "missing-write",
+      "expectedDiff": [
+        {
+          "check": "expected-writes",
+          "message": "missing write exchange_delivered_order_items {\"item_ids\":[\"3478699712\"],\"new_item_ids\":[\"9844888101\"],\"order_id\":\"#W2905754\",\"payment_method_id\":\"credit_card_3677959\"}",
+          "severity": "major",
+          "turnIdx": null
+        },
+        {
+          "check": "expected-writes",
+          "message": "unexpected write exchange_delivered_order_items {\"item_ids\":[\"2216662955\"],\"new_item_ids\":[\"9844888101\"],\"order_id\":\"#W4073673\",\"payment_method_id\":\"credit_card_3677959\"}",
+          "severity": "major",
+          "turnIdx": 18
+        }
+      ],
+      "findings": [],
+      "id": "opus45/094/t2",
+      "judge": null,
+      "passed": false,
+      "taskId": "94",
+      "terminationReason": "user_stop",
+      "trial": 2
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/094/t3",
+      "judge": null,
+      "passed": true,
+      "taskId": "94",
+      "terminationReason": "user_stop",
+      "trial": 3
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/095/t0",
+      "judge": null,
+      "passed": true,
+      "taskId": "95",
+      "terminationReason": "user_stop",
+      "trial": 0
+    },
+    {
+      "bucket": "communication-only",
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/095/t1",
+      "judge": null,
+      "passed": false,
+      "taskId": "95",
+      "terminationReason": "user_stop",
+      "trial": 1
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/095/t2",
+      "judge": null,
+      "passed": true,
+      "taskId": "95",
+      "terminationReason": "user_stop",
+      "trial": 2
+    },
+    {
+      "bucket": "sim-stop-on-confirm",
+      "expectedDiff": [
+        {
+          "check": "expected-writes",
+          "message": "missing write exchange_delivered_order_items {\"item_ids\":[\"3478699712\"],\"new_item_ids\":[\"9844888101\"],\"order_id\":\"#W2905754\",\"payment_method_id\":\"credit_card_3677959\"}",
+          "severity": "major",
+          "turnIdx": null
+        },
+        {
+          "check": "expected-writes",
+          "message": "missing write exchange_delivered_order_items {\"item_ids\":[\"2216662955\"],\"new_item_ids\":[\"9844888101\"],\"order_id\":\"#W4073673\",\"payment_method_id\":\"credit_card_3677959\"}",
+          "severity": "major",
+          "turnIdx": null
+        }
+      ],
+      "findings": [],
+      "id": "opus45/095/t3",
+      "judge": null,
+      "passed": false,
+      "taskId": "95",
+      "terminationReason": "user_stop",
+      "trial": 3
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/096/t0",
+      "judge": null,
+      "passed": true,
+      "taskId": "96",
+      "terminationReason": "user_stop",
+      "trial": 0
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/096/t1",
+      "judge": null,
+      "passed": true,
+      "taskId": "96",
+      "terminationReason": "user_stop",
+      "trial": 1
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/096/t2",
+      "judge": null,
+      "passed": true,
+      "taskId": "96",
+      "terminationReason": "user_stop",
+      "trial": 2
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/096/t3",
+      "judge": null,
+      "passed": true,
+      "taskId": "96",
+      "terminationReason": "user_stop",
+      "trial": 3
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/097/t0",
+      "judge": null,
+      "passed": true,
+      "taskId": "97",
+      "terminationReason": "user_stop",
+      "trial": 0
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/097/t1",
+      "judge": null,
+      "passed": true,
+      "taskId": "97",
+      "terminationReason": "user_stop",
+      "trial": 1
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/097/t2",
+      "judge": null,
+      "passed": true,
+      "taskId": "97",
+      "terminationReason": "user_stop",
+      "trial": 2
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/097/t3",
+      "judge": null,
+      "passed": true,
+      "taskId": "97",
+      "terminationReason": "user_stop",
+      "trial": 3
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/098/t0",
+      "judge": null,
+      "passed": true,
+      "taskId": "98",
+      "terminationReason": "user_stop",
+      "trial": 0
+    },
+    {
+      "bucket": "sim-stop-on-confirm",
+      "expectedDiff": [
+        {
+          "check": "expected-writes",
+          "message": "missing write exchange_delivered_order_items {\"item_ids\":[\"5996159312\"],\"new_item_ids\":[\"8363011723\"],\"order_id\":\"#W4689314\",\"payment_method_id\":\"credit_card_8105988\"}",
+          "severity": "major",
+          "turnIdx": null
+        },
+        {
+          "check": "expected-writes",
+          "message": "missing write exchange_delivered_order_items {\"item_ids\":[\"7758198585\",\"4068787148\"],\"new_item_ids\":[\"5606522780\",\"6245746168\"],\"order_id\":\"#W3916020\",\"payment_method_id\":\"credit_card_8105988\"}",
+          "severity": "major",
+          "turnIdx": null
+        },
+        {
+          "check": "expected-writes",
+          "message": "missing write cancel_pending_order {\"order_id\":\"#W8855135\",\"reason\":\"no longer needed\"}",
+          "severity": "major",
+          "turnIdx": null
+        }
+      ],
+      "findings": [],
+      "id": "opus45/098/t1",
+      "judge": null,
+      "passed": false,
+      "taskId": "98",
+      "terminationReason": "user_stop",
+      "trial": 1
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/098/t2",
+      "judge": null,
+      "passed": true,
+      "taskId": "98",
+      "terminationReason": "user_stop",
+      "trial": 2
+    },
+    {
+      "bucket": "wrong-payment-method",
+      "expectedDiff": [
+        {
+          "check": "expected-writes",
+          "message": "missing write exchange_delivered_order_items {\"item_ids\":[\"5996159312\"],\"new_item_ids\":[\"8363011723\"],\"order_id\":\"#W4689314\",\"payment_method_id\":\"credit_card_8105988\"}",
+          "severity": "major",
+          "turnIdx": null
+        },
+        {
+          "check": "expected-writes",
+          "message": "wrong argument in exchange_delivered_order_items: payment_method_id: expected \"credit_card_8105988\", got \"credit_card_3951670\"",
+          "severity": "major",
+          "turnIdx": 18
+        }
+      ],
+      "findings": [],
+      "id": "opus45/098/t3",
+      "judge": null,
+      "passed": false,
+      "taskId": "98",
+      "terminationReason": "user_stop",
+      "trial": 3
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/099/t0",
+      "judge": null,
+      "passed": true,
+      "taskId": "99",
+      "terminationReason": "user_stop",
+      "trial": 0
+    },
+    {
+      "bucket": "sim-stop-on-confirm",
+      "expectedDiff": [
+        {
+          "check": "expected-writes",
+          "message": "missing write exchange_delivered_order_items {\"item_ids\":[\"5996159312\"],\"new_item_ids\":[\"8363011723\"],\"order_id\":\"#W4689314\",\"payment_method_id\":\"credit_card_3951670\"}",
+          "severity": "major",
+          "turnIdx": null
+        },
+        {
+          "check": "expected-writes",
+          "message": "missing write exchange_delivered_order_items {\"item_ids\":[\"7758198585\",\"4068787148\"],\"new_item_ids\":[\"5606522780\",\"5546244844\"],\"order_id\":\"#W3916020\",\"payment_method_id\":\"credit_card_3951670\"}",
+          "severity": "major",
+          "turnIdx": null
+        }
+      ],
+      "findings": [],
+      "id": "opus45/099/t1",
+      "judge": null,
+      "passed": false,
+      "taskId": "99",
+      "terminationReason": "user_stop",
+      "trial": 1
+    },
+    {
+      "bucket": "ended-in-transfer",
+      "expectedDiff": [
+        {
+          "check": "expected-writes",
+          "message": "missing write exchange_delivered_order_items {\"item_ids\":[\"5996159312\"],\"new_item_ids\":[\"8363011723\"],\"order_id\":\"#W4689314\",\"payment_method_id\":\"credit_card_3951670\"}",
+          "severity": "major",
+          "turnIdx": null
+        },
+        {
+          "check": "expected-writes",
+          "message": "missing write exchange_delivered_order_items {\"item_ids\":[\"7758198585\",\"4068787148\"],\"new_item_ids\":[\"5606522780\",\"5546244844\"],\"order_id\":\"#W3916020\",\"payment_method_id\":\"credit_card_3951670\"}",
+          "severity": "major",
+          "turnIdx": null
+        }
+      ],
+      "findings": [],
+      "id": "opus45/099/t2",
+      "judge": null,
+      "passed": false,
+      "taskId": "99",
+      "terminationReason": "user_stop",
+      "trial": 2
+    },
+    {
+      "bucket": "ended-in-transfer",
+      "expectedDiff": [
+        {
+          "check": "expected-writes",
+          "message": "missing write exchange_delivered_order_items {\"item_ids\":[\"5996159312\"],\"new_item_ids\":[\"8363011723\"],\"order_id\":\"#W4689314\",\"payment_method_id\":\"credit_card_3951670\"}",
+          "severity": "major",
+          "turnIdx": null
+        },
+        {
+          "check": "expected-writes",
+          "message": "missing write exchange_delivered_order_items {\"item_ids\":[\"7758198585\",\"4068787148\"],\"new_item_ids\":[\"5606522780\",\"5546244844\"],\"order_id\":\"#W3916020\",\"payment_method_id\":\"credit_card_3951670\"}",
+          "severity": "major",
+          "turnIdx": null
+        }
+      ],
+      "findings": [],
+      "id": "opus45/099/t3",
+      "judge": null,
+      "passed": false,
+      "taskId": "99",
+      "terminationReason": "user_stop",
+      "trial": 3
+    },
+    {
+      "bucket": "sim-stop-on-confirm",
+      "expectedDiff": [
+        {
+          "check": "expected-writes",
+          "message": "missing write modify_pending_order_items {\"item_ids\":[\"8926329222\",\"5312063289\"],\"new_item_ids\":[\"7160999700\",\"6956751343\"],\"order_id\":\"#W3295833\",\"payment_method_id\":\"credit_card_3261838\"}",
+          "severity": "major",
+          "turnIdx": null
+        },
+        {
+          "check": "expected-writes",
+          "message": "missing write return_delivered_order_items {\"item_ids\":[\"5676696062\"],\"order_id\":\"#W8488728\",\"payment_method_id\":\"paypal_3650980\"}",
+          "severity": "major",
+          "turnIdx": null
+        }
+      ],
+      "findings": [],
+      "id": "opus45/100/t0",
+      "judge": null,
+      "passed": false,
+      "taskId": "100",
+      "terminationReason": "user_stop",
+      "trial": 0
+    },
+    {
+      "bucket": "unwarranted-write",
+      "expectedDiff": [
+        {
+          "check": "expected-writes",
+          "message": "unexpected write modify_pending_order_payment {\"order_id\":\"#W3295833\",\"payment_method_id\":\"credit_card_3261838\"}",
+          "severity": "major",
+          "turnIdx": 23
+        }
+      ],
+      "findings": [],
+      "id": "opus45/100/t1",
+      "judge": null,
+      "passed": false,
+      "taskId": "100",
+      "terminationReason": "user_stop",
+      "trial": 1
+    },
+    {
+      "bucket": "unwarranted-write",
+      "expectedDiff": [
+        {
+          "check": "expected-writes",
+          "message": "unexpected write modify_pending_order_payment {\"order_id\":\"#W3295833\",\"payment_method_id\":\"credit_card_3261838\"}",
+          "severity": "major",
+          "turnIdx": 21
+        }
+      ],
+      "findings": [],
+      "id": "opus45/100/t2",
+      "judge": null,
+      "passed": false,
+      "taskId": "100",
+      "terminationReason": "user_stop",
+      "trial": 2
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/100/t3",
+      "judge": null,
+      "passed": true,
+      "taskId": "100",
+      "terminationReason": "user_stop",
+      "trial": 3
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/101/t0",
+      "judge": null,
+      "passed": true,
+      "taskId": "101",
+      "terminationReason": "user_stop",
+      "trial": 0
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/101/t1",
+      "judge": null,
+      "passed": true,
+      "taskId": "101",
+      "terminationReason": "user_stop",
+      "trial": 1
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/101/t2",
+      "judge": null,
+      "passed": true,
+      "taskId": "101",
+      "terminationReason": "user_stop",
+      "trial": 2
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/101/t3",
+      "judge": null,
+      "passed": true,
+      "taskId": "101",
+      "terminationReason": "user_stop",
+      "trial": 3
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/102/t0",
+      "judge": null,
+      "passed": true,
+      "taskId": "102",
+      "terminationReason": "user_stop",
+      "trial": 0
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/102/t1",
+      "judge": null,
+      "passed": true,
+      "taskId": "102",
+      "terminationReason": "user_stop",
+      "trial": 1
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/102/t2",
+      "judge": null,
+      "passed": true,
+      "taskId": "102",
+      "terminationReason": "user_stop",
+      "trial": 2
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/102/t3",
+      "judge": null,
+      "passed": true,
+      "taskId": "102",
+      "terminationReason": "user_stop",
+      "trial": 3
+    },
+    {
+      "bucket": "communication-only",
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/103/t0",
+      "judge": null,
+      "passed": false,
+      "taskId": "103",
+      "terminationReason": "user_stop",
+      "trial": 0
+    },
+    {
+      "bucket": "communication-only",
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/103/t1",
+      "judge": null,
+      "passed": false,
+      "taskId": "103",
+      "terminationReason": "user_stop",
+      "trial": 1
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/103/t2",
+      "judge": null,
+      "passed": true,
+      "taskId": "103",
+      "terminationReason": "user_stop",
+      "trial": 2
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/103/t3",
+      "judge": null,
+      "passed": true,
+      "taskId": "103",
+      "terminationReason": "user_stop",
+      "trial": 3
+    },
+    {
+      "bucket": "sim-stop-on-confirm",
+      "expectedDiff": [
+        {
+          "check": "expected-writes",
+          "message": "missing write modify_pending_order_address {\"address1\":\"921 Park Avenue\",\"address2\":\"Suite 892\",\"city\":\"Chicago\",\"country\":\"USA\",\"order_id\":\"#W4860251\",\"state\":\"IL\",\"zip\":\"60612\"}",
+          "severity": "major",
+          "turnIdx": null
+        },
+        {
+          "check": "expected-writes",
+          "message": "missing write modify_pending_order_items {\"item_ids\":[\"5209958006\"],\"new_item_ids\":[\"8964750292\"],\"order_id\":\"#W4860251\",\"payment_method_id\":\"credit_card_2112420\"}",
+          "severity": "major",
+          "turnIdx": null
+        }
+      ],
+      "findings": [],
+      "id": "opus45/104/t0",
+      "judge": null,
+      "passed": false,
+      "taskId": "104",
+      "terminationReason": "user_stop",
+      "trial": 0
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/104/t1",
+      "judge": null,
+      "passed": true,
+      "taskId": "104",
+      "terminationReason": "user_stop",
+      "trial": 1
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/104/t2",
+      "judge": null,
+      "passed": true,
+      "taskId": "104",
+      "terminationReason": "user_stop",
+      "trial": 2
+    },
+    {
+      "bucket": "wrong-variant",
+      "expectedDiff": [
+        {
+          "check": "expected-writes",
+          "message": "wrong argument in modify_pending_order_items: new_item_ids: expected [\"8964750292\"], got [\"7160999700\"]",
+          "severity": "major",
+          "turnIdx": 37
+        }
+      ],
+      "findings": [],
+      "id": "opus45/104/t3",
+      "judge": null,
+      "passed": false,
+      "taskId": "104",
+      "terminationReason": "user_stop",
+      "trial": 3
+    },
+    {
+      "bucket": "ended-in-transfer",
+      "expectedDiff": [
+        {
+          "check": "expected-writes",
+          "message": "missing write exchange_delivered_order_items {\"item_ids\":[\"7292993796\",\"7292993796\"],\"new_item_ids\":[\"3761330360\",\"9647374798\"],\"order_id\":\"#W4316152\",\"payment_method_id\":\"gift_card_7245904\"}",
+          "severity": "major",
+          "turnIdx": null
+        }
+      ],
+      "findings": [
+        {
+          "check": "write-error",
+          "message": "exchange_delivered_order_items failed: Error: Insufficient gift card balance to pay for the price difference",
+          "severity": "minor",
+          "turnIdx": 14
+        }
+      ],
+      "id": "opus45/105/t0",
+      "judge": null,
+      "passed": false,
+      "taskId": "105",
+      "terminationReason": "user_stop",
+      "trial": 0
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [
+        {
+          "check": "expected-writes",
+          "message": "missing write exchange_delivered_order_items {\"item_ids\":[\"7292993796\",\"7292993796\"],\"new_item_ids\":[\"3761330360\",\"9647374798\"],\"order_id\":\"#W4316152\",\"payment_method_id\":\"gift_card_7245904\"}",
+          "severity": "major",
+          "turnIdx": null
+        }
+      ],
+      "findings": [
+        {
+          "check": "write-error",
+          "message": "exchange_delivered_order_items failed: Error: Insufficient gift card balance to pay for the price difference",
+          "severity": "minor",
+          "turnIdx": 14
+        }
+      ],
+      "id": "opus45/105/t1",
+      "judge": null,
+      "passed": true,
+      "taskId": "105",
+      "terminationReason": "user_stop",
+      "trial": 1
+    },
+    {
+      "bucket": "ended-in-transfer",
+      "expectedDiff": [
+        {
+          "check": "expected-writes",
+          "message": "missing write exchange_delivered_order_items {\"item_ids\":[\"7292993796\",\"7292993796\"],\"new_item_ids\":[\"3761330360\",\"9647374798\"],\"order_id\":\"#W4316152\",\"payment_method_id\":\"gift_card_7245904\"}",
+          "severity": "major",
+          "turnIdx": null
+        }
+      ],
+      "findings": [],
+      "id": "opus45/105/t2",
+      "judge": null,
+      "passed": false,
+      "taskId": "105",
+      "terminationReason": "user_stop",
+      "trial": 2
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [
+        {
+          "check": "expected-writes",
+          "message": "missing write exchange_delivered_order_items {\"item_ids\":[\"7292993796\",\"7292993796\"],\"new_item_ids\":[\"3761330360\",\"9647374798\"],\"order_id\":\"#W4316152\",\"payment_method_id\":\"gift_card_7245904\"}",
+          "severity": "major",
+          "turnIdx": null
+        }
+      ],
+      "findings": [],
+      "id": "opus45/105/t3",
+      "judge": null,
+      "passed": true,
+      "taskId": "105",
+      "terminationReason": "user_stop",
+      "trial": 3
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/106/t0",
+      "judge": null,
+      "passed": true,
+      "taskId": "106",
+      "terminationReason": "user_stop",
+      "trial": 0
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/106/t1",
+      "judge": null,
+      "passed": true,
+      "taskId": "106",
+      "terminationReason": "user_stop",
+      "trial": 1
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/106/t2",
+      "judge": null,
+      "passed": true,
+      "taskId": "106",
+      "terminationReason": "user_stop",
+      "trial": 2
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/106/t3",
+      "judge": null,
+      "passed": true,
+      "taskId": "106",
+      "terminationReason": "user_stop",
+      "trial": 3
+    },
+    {
+      "bucket": "wrong-variant",
+      "expectedDiff": [
+        {
+          "check": "expected-writes",
+          "message": "wrong argument in exchange_delivered_order_items: new_item_ids: expected [\"8106223139\"], got [\"1615379700\"]",
+          "severity": "major",
+          "turnIdx": 18
+        }
+      ],
+      "findings": [],
+      "id": "opus45/107/t0",
+      "judge": null,
+      "passed": false,
+      "taskId": "107",
+      "terminationReason": "user_stop",
+      "trial": 0
+    },
+    {
+      "bucket": "ended-in-transfer",
+      "expectedDiff": [
+        {
+          "check": "expected-writes",
+          "message": "missing write exchange_delivered_order_items {\"item_ids\":[\"1615379700\"],\"new_item_ids\":[\"8106223139\"],\"order_id\":\"#W1304208\",\"payment_method_id\":\"paypal_1679017\"}",
+          "severity": "major",
+          "turnIdx": null
+        }
+      ],
+      "findings": [],
+      "id": "opus45/107/t1",
+      "judge": null,
+      "passed": false,
+      "taskId": "107",
+      "terminationReason": "user_stop",
+      "trial": 1
+    },
+    {
+      "bucket": "ended-in-transfer",
+      "expectedDiff": [
+        {
+          "check": "expected-writes",
+          "message": "missing write exchange_delivered_order_items {\"item_ids\":[\"1615379700\"],\"new_item_ids\":[\"8106223139\"],\"order_id\":\"#W1304208\",\"payment_method_id\":\"paypal_1679017\"}",
+          "severity": "major",
+          "turnIdx": null
+        },
+        {
+          "check": "expected-writes",
+          "message": "missing write exchange_delivered_order_items {\"item_ids\":[\"6245746168\"],\"new_item_ids\":[\"3112842858\"],\"order_id\":\"#W8353027\",\"payment_method_id\":\"paypal_1679017\"}",
+          "severity": "major",
+          "turnIdx": null
+        }
+      ],
+      "findings": [],
+      "id": "opus45/107/t2",
+      "judge": null,
+      "passed": false,
+      "taskId": "107",
+      "terminationReason": "user_stop",
+      "trial": 2
+    },
+    {
+      "bucket": "wrong-variant",
+      "expectedDiff": [
+        {
+          "check": "expected-writes",
+          "message": "wrong argument in exchange_delivered_order_items: new_item_ids: expected [\"8106223139\"], got [\"1615379700\"]",
+          "severity": "major",
+          "turnIdx": 18
+        }
+      ],
+      "findings": [],
+      "id": "opus45/107/t3",
+      "judge": null,
+      "passed": false,
+      "taskId": "107",
+      "terminationReason": "user_stop",
+      "trial": 3
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [
+        {
+          "check": "expected-writes",
+          "message": "wrong argument in return_delivered_order_items: item_ids: expected [\"9612497925\",\"7127170374\",\"6268080249\"], got [\"6268080249\",\"7127170374\",\"9612497925\"]",
+          "severity": "major",
+          "turnIdx": 12
+        }
+      ],
+      "findings": [],
+      "id": "opus45/108/t0",
+      "judge": null,
+      "passed": true,
+      "taskId": "108",
+      "terminationReason": "user_stop",
+      "trial": 0
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [
+        {
+          "check": "expected-writes",
+          "message": "wrong argument in return_delivered_order_items: item_ids: expected [\"9612497925\",\"7127170374\",\"6268080249\"], got [\"6268080249\",\"7127170374\",\"9612497925\"]",
+          "severity": "major",
+          "turnIdx": 16
+        }
+      ],
+      "findings": [],
+      "id": "opus45/108/t1",
+      "judge": null,
+      "passed": true,
+      "taskId": "108",
+      "terminationReason": "user_stop",
+      "trial": 1
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [
+        {
+          "check": "expected-writes",
+          "message": "wrong argument in return_delivered_order_items: item_ids: expected [\"9612497925\",\"7127170374\",\"6268080249\"], got [\"6268080249\",\"7127170374\",\"9612497925\"]",
+          "severity": "major",
+          "turnIdx": 16
+        }
+      ],
+      "findings": [],
+      "id": "opus45/108/t2",
+      "judge": null,
+      "passed": true,
+      "taskId": "108",
+      "terminationReason": "user_stop",
+      "trial": 2
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [
+        {
+          "check": "expected-writes",
+          "message": "wrong argument in return_delivered_order_items: item_ids: expected [\"9612497925\",\"7127170374\",\"6268080249\"], got [\"6268080249\",\"7127170374\",\"9612497925\"]",
+          "severity": "major",
+          "turnIdx": 18
+        }
+      ],
+      "findings": [],
+      "id": "opus45/108/t3",
+      "judge": null,
+      "passed": true,
+      "taskId": "108",
+      "terminationReason": "user_stop",
+      "trial": 3
+    },
+    {
+      "bucket": "missing-write",
+      "expectedDiff": [
+        {
+          "check": "expected-writes",
+          "message": "missing write modify_pending_order_address {\"address1\":\"592 Elm Avenue\",\"address2\":\"Suite 978\",\"city\":\"Houston\",\"country\":\"USA\",\"order_id\":\"#W1603792\",\"state\":\"TX\",\"zip\":\"77242\"}",
+          "severity": "major",
+          "turnIdx": null
+        },
+        {
+          "check": "expected-writes",
+          "message": "missing write modify_user_address {\"address1\":\"592 Elm Avenue\",\"address2\":\"Suite 978\",\"city\":\"Houston\",\"country\":\"USA\",\"state\":\"TX\",\"user_id\":\"sophia_martin_8570\",\"zip\":\"77242\"}",
+          "severity": "major",
+          "turnIdx": null
+        },
+        {
+          "check": "expected-writes",
+          "message": "unexpected write modify_pending_order_address {\"address1\":\"760 Elm Avenue\",\"address2\":\"Suite 564\",\"city\":\"Houston\",\"country\":\"USA\",\"order_id\":\"#W1092119\",\"state\":\"TX\",\"zip\":\"77034\"}",
+          "severity": "major",
+          "turnIdx": 15
+        }
+      ],
+      "findings": [],
+      "id": "opus45/109/t0",
+      "judge": null,
+      "passed": false,
+      "taskId": "109",
+      "terminationReason": "user_stop",
+      "trial": 0
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/109/t1",
+      "judge": null,
+      "passed": true,
+      "taskId": "109",
+      "terminationReason": "user_stop",
+      "trial": 1
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/109/t2",
+      "judge": null,
+      "passed": true,
+      "taskId": "109",
+      "terminationReason": "user_stop",
+      "trial": 2
+    },
+    {
+      "bucket": "missing-write",
+      "expectedDiff": [
+        {
+          "check": "expected-writes",
+          "message": "missing write modify_pending_order_address {\"address1\":\"592 Elm Avenue\",\"address2\":\"Suite 978\",\"city\":\"Houston\",\"country\":\"USA\",\"order_id\":\"#W1603792\",\"state\":\"TX\",\"zip\":\"77242\"}",
+          "severity": "major",
+          "turnIdx": null
+        },
+        {
+          "check": "expected-writes",
+          "message": "missing write modify_user_address {\"address1\":\"592 Elm Avenue\",\"address2\":\"Suite 978\",\"city\":\"Houston\",\"country\":\"USA\",\"state\":\"TX\",\"user_id\":\"sophia_martin_8570\",\"zip\":\"77242\"}",
+          "severity": "major",
+          "turnIdx": null
+        },
+        {
+          "check": "expected-writes",
+          "message": "unexpected write modify_pending_order_address {\"address1\":\"760 Elm Avenue\",\"address2\":\"Suite 564\",\"city\":\"Houston\",\"country\":\"USA\",\"order_id\":\"#W1092119\",\"state\":\"TX\",\"zip\":\"77034\"}",
+          "severity": "major",
+          "turnIdx": 15
+        }
+      ],
+      "findings": [],
+      "id": "opus45/109/t3",
+      "judge": null,
+      "passed": false,
+      "taskId": "109",
+      "terminationReason": "user_stop",
+      "trial": 3
+    },
+    {
+      "bucket": "wrong-other-argument",
+      "expectedDiff": [
+        {
+          "check": "expected-writes",
+          "message": "missing write modify_pending_order_address {\"address1\":\"760 Elm Avenue\",\"address2\":\"Suite 564\",\"city\":\"Houston\",\"country\":\"USA\",\"order_id\":\"#W1092119\",\"state\":\"TX\",\"zip\":\"77034\"}",
+          "severity": "major",
+          "turnIdx": null
+        },
+        {
+          "check": "expected-writes",
+          "message": "wrong argument in modify_user_address: address1: expected \"760 Elm Avenue\", got \"592 Elm Avenue\"; address2: expected \"Suite 564\", got \"Suite 978\"; zip: expected \"77034\", got \"77242\"",
+          "severity": "major",
+          "turnIdx": 17
+        },
+        {
+          "check": "expected-writes",
+          "message": "unexpected write modify_pending_order_address {\"address1\":\"592 Elm Avenue\",\"address2\":\"Suite 978\",\"city\":\"Houston\",\"country\":\"USA\",\"order_id\":\"#W1603792\",\"state\":\"TX\",\"zip\":\"77242\"}",
+          "severity": "major",
+          "turnIdx": 17
+        }
+      ],
+      "findings": [],
+      "id": "opus45/110/t0",
+      "judge": null,
+      "passed": false,
+      "taskId": "110",
+      "terminationReason": "user_stop",
+      "trial": 0
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [
+        {
+          "check": "expected-writes",
+          "message": "missing write modify_user_address {\"address1\":\"760 Elm Avenue\",\"address2\":\"Suite 564\",\"city\":\"Houston\",\"country\":\"USA\",\"state\":\"TX\",\"user_id\":\"sophia_martin_8570\",\"zip\":\"77034\"}",
+          "severity": "major",
+          "turnIdx": null
+        }
+      ],
+      "findings": [],
+      "id": "opus45/110/t1",
+      "judge": null,
+      "passed": true,
+      "taskId": "110",
+      "terminationReason": "user_stop",
+      "trial": 1
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [
+        {
+          "check": "expected-writes",
+          "message": "missing write modify_user_address {\"address1\":\"760 Elm Avenue\",\"address2\":\"Suite 564\",\"city\":\"Houston\",\"country\":\"USA\",\"state\":\"TX\",\"user_id\":\"sophia_martin_8570\",\"zip\":\"77034\"}",
+          "severity": "major",
+          "turnIdx": null
+        }
+      ],
+      "findings": [],
+      "id": "opus45/110/t2",
+      "judge": null,
+      "passed": true,
+      "taskId": "110",
+      "terminationReason": "user_stop",
+      "trial": 2
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [
+        {
+          "check": "expected-writes",
+          "message": "missing write modify_user_address {\"address1\":\"760 Elm Avenue\",\"address2\":\"Suite 564\",\"city\":\"Houston\",\"country\":\"USA\",\"state\":\"TX\",\"user_id\":\"sophia_martin_8570\",\"zip\":\"77034\"}",
+          "severity": "major",
+          "turnIdx": null
+        }
+      ],
+      "findings": [],
+      "id": "opus45/110/t3",
+      "judge": null,
+      "passed": true,
+      "taskId": "110",
+      "terminationReason": "user_stop",
+      "trial": 3
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/111/t0",
+      "judge": null,
+      "passed": true,
+      "taskId": "111",
+      "terminationReason": "user_stop",
+      "trial": 0
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/111/t1",
+      "judge": null,
+      "passed": true,
+      "taskId": "111",
+      "terminationReason": "user_stop",
+      "trial": 1
+    },
+    {
+      "bucket": "unwarranted-write",
+      "expectedDiff": [
+        {
+          "check": "expected-writes",
+          "message": "unexpected write modify_pending_order_address {\"address1\":\"555 Highland Drive\",\"address2\":\"Suite 872\",\"city\":\"New York\",\"country\":\"USA\",\"order_id\":\"#W9810810\",\"state\":\"NY\",\"zip\":\"10116\"}",
+          "severity": "major",
+          "turnIdx": 20
+        }
+      ],
+      "findings": [],
+      "id": "opus45/111/t2",
+      "judge": null,
+      "passed": false,
+      "taskId": "111",
+      "terminationReason": "user_stop",
+      "trial": 2
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/111/t3",
+      "judge": null,
+      "passed": true,
+      "taskId": "111",
+      "terminationReason": "user_stop",
+      "trial": 3
+    },
+    {
+      "bucket": "unwarranted-write",
+      "expectedDiff": [
+        {
+          "check": "expected-writes",
+          "message": "unexpected write modify_pending_order_address {\"address1\":\"555 Highland Drive\",\"address2\":\"Suite 872\",\"city\":\"New York\",\"country\":\"USA\",\"order_id\":\"#W9810810\",\"state\":\"NY\",\"zip\":\"10116\"}",
+          "severity": "major",
+          "turnIdx": 22
+        }
+      ],
+      "findings": [
+        {
+          "check": "same-product",
+          "message": "replacement 9844888101 for 2913673670 chosen without fetching product 4760268021",
+          "severity": "minor",
+          "turnIdx": 22
+        }
+      ],
+      "id": "opus45/112/t0",
+      "judge": null,
+      "passed": false,
+      "taskId": "112",
+      "terminationReason": "user_stop",
+      "trial": 0
+    },
+    {
+      "bucket": "sim-stop-on-confirm",
+      "expectedDiff": [
+        {
+          "check": "expected-writes",
+          "message": "missing write modify_pending_order_items {\"item_ids\":[\"1355937109\"],\"new_item_ids\":[\"9949163720\"],\"order_id\":\"#W9810810\",\"payment_method_id\":\"gift_card_7252880\"}",
+          "severity": "major",
+          "turnIdx": null
+        },
+        {
+          "check": "expected-writes",
+          "message": "missing write modify_pending_order_address {\"address1\":\"555 Highland Drive\",\"address2\":\"Suite 872\",\"city\":\"New York\",\"country\":\"USA\",\"order_id\":\"#W3730488\",\"state\":\"NY\",\"zip\":\"10116\"}",
+          "severity": "major",
+          "turnIdx": null
+        },
+        {
+          "check": "expected-writes",
+          "message": "missing write modify_pending_order_items {\"item_ids\":[\"2913673670\"],\"new_item_ids\":[\"9844888101\"],\"order_id\":\"#W3730488\",\"payment_method_id\":\"gift_card_7252880\"}",
+          "severity": "major",
+          "turnIdx": null
+        }
+      ],
+      "findings": [],
+      "id": "opus45/112/t1",
+      "judge": null,
+      "passed": false,
+      "taskId": "112",
+      "terminationReason": "user_stop",
+      "trial": 1
+    },
+    {
+      "bucket": "unwarranted-write",
+      "expectedDiff": [
+        {
+          "check": "expected-writes",
+          "message": "unexpected write modify_pending_order_address {\"address1\":\"555 Highland Drive\",\"address2\":\"Suite 872\",\"city\":\"New York\",\"country\":\"USA\",\"order_id\":\"#W9810810\",\"state\":\"NY\",\"zip\":\"10116\"}",
+          "severity": "major",
+          "turnIdx": 20
+        }
+      ],
+      "findings": [
+        {
+          "check": "same-product",
+          "message": "replacement 9844888101 for 2913673670 chosen without fetching product 4760268021",
+          "severity": "minor",
+          "turnIdx": 23
+        }
+      ],
+      "id": "opus45/112/t2",
+      "judge": null,
+      "passed": false,
+      "taskId": "112",
+      "terminationReason": "user_stop",
+      "trial": 2
+    },
+    {
+      "bucket": "sim-stop-on-confirm",
+      "expectedDiff": [
+        {
+          "check": "expected-writes",
+          "message": "missing write modify_pending_order_items {\"item_ids\":[\"1355937109\"],\"new_item_ids\":[\"9949163720\"],\"order_id\":\"#W9810810\",\"payment_method_id\":\"gift_card_7252880\"}",
+          "severity": "major",
+          "turnIdx": null
+        },
+        {
+          "check": "expected-writes",
+          "message": "missing write modify_pending_order_address {\"address1\":\"555 Highland Drive\",\"address2\":\"Suite 872\",\"city\":\"New York\",\"country\":\"USA\",\"order_id\":\"#W3730488\",\"state\":\"NY\",\"zip\":\"10116\"}",
+          "severity": "major",
+          "turnIdx": null
+        },
+        {
+          "check": "expected-writes",
+          "message": "missing write modify_pending_order_items {\"item_ids\":[\"2913673670\"],\"new_item_ids\":[\"9844888101\"],\"order_id\":\"#W3730488\",\"payment_method_id\":\"gift_card_7252880\"}",
+          "severity": "major",
+          "turnIdx": null
+        }
+      ],
+      "findings": [],
+      "id": "opus45/112/t3",
+      "judge": null,
+      "passed": false,
+      "taskId": "112",
+      "terminationReason": "user_stop",
+      "trial": 3
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/113/t0",
+      "judge": null,
+      "passed": true,
+      "taskId": "113",
+      "terminationReason": "user_stop",
+      "trial": 0
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/113/t1",
+      "judge": null,
+      "passed": true,
+      "taskId": "113",
+      "terminationReason": "user_stop",
+      "trial": 1
+    },
+    {
+      "bucket": "sim-stop-on-confirm",
+      "expectedDiff": [
+        {
+          "check": "expected-writes",
+          "message": "missing write cancel_pending_order {\"order_id\":\"#W5056519\",\"reason\":\"ordered by mistake\"}",
+          "severity": "major",
+          "turnIdx": null
+        },
+        {
+          "check": "expected-writes",
+          "message": "missing write cancel_pending_order {\"order_id\":\"#W5995614\",\"reason\":\"ordered by mistake\"}",
+          "severity": "major",
+          "turnIdx": null
+        }
+      ],
+      "findings": [],
+      "id": "opus45/113/t2",
+      "judge": null,
+      "passed": false,
+      "taskId": "113",
+      "terminationReason": "user_stop",
+      "trial": 2
+    },
+    {
+      "bucket": null,
+      "expectedDiff": [],
+      "findings": [],
+      "id": "opus45/113/t3",
+      "judge": null,
+      "passed": true,
+      "taskId": "113",
+      "terminationReason": "user_stop",
+      "trial": 3
+    }
+  ],
+  "trialsPerTask": 4,
+  "verdicts": null
+}
