@@ -1,5 +1,7 @@
 # cs-agent-regress
 
+[![agent-regression](https://github.com/m4xkushnir/cs-agent-regress/actions/workflows/regression.yml/badge.svg)](https://github.com/m4xkushnir/cs-agent-regress/actions/workflows/regression.yml)
+
 A deterministic regression harness for LLM customer-service agents, and a failure analysis of
 1,368 public conversations from the [τ-bench](https://github.com/sierra-research/tau2-bench)
 retail domain (returns, exchanges, cancellations, order changes).
